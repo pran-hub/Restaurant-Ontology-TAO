@@ -1,5 +1,5 @@
 # RestaurantOntology-TAO
-CS6852 Theory and Applications of Ontology - Restaurant Ontology Project
+CS6852 Theory and Applications of Ontology - Restaurant Ontology Project<br>
 JAN - MAY 2022
 <hr>
 Entire Project is divided in 4 phases: <br>
