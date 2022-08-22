@@ -1,0 +1,1810 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto"
+     xml:base="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:RestaurantOnto="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#assist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#assist">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#assists -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#assists">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+        <rdfs:label xml:lang="en">assists</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bookedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bookedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#books"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PartyHall"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#books -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#books">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PartyHall"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">books</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#collectsPaymentFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#collectsPaymentFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+        <rdfs:label xml:lang="en">collectsPaymentFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#StorageArea"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dessert"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MainCourse"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cooks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cooks">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">cooks</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#generates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#generates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#maintainsCleanlinessAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#maintainsCleanlinessAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#manages -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#manages">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">manages</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#managesActively -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#managesActively">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#manages"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supervisor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#orders -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#orders">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+        <rdfs:label xml:lang="en">orders</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ChineseDish"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#IndianDish"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ItalianDish"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MexicanDish"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#China"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#India"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Italy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Mexico"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#owns">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+        <rdfs:label xml:lang="en">owns</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dessert"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MainCourse"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#StorageArea"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#pays -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#pays">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurateur"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Expenditure"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">paysFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#places -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#places">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plannedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plannedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plans"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#preparedFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#preparedFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#serves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#serves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#supplies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#supplies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supplier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#takes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#takes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+        <rdfs:label xml:lang="en">takes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#uses"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BillingCounter"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RestRoom"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#uses">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BillingCounter"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RestRoom"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#visits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#visits">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+        <rdfs:label xml:lang="en">visits</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#worksAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#worksAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">to store the address of the restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#consistOf -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#consistOf">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">to indicate the food items present at the restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">consistsOf</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contact -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cost">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Expenditure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#details -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#details">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#id">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#orderDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#orderDetails">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">contains the details of each order (items that the customer ordered)</rdfs:comment>
+        <rdfs:label xml:lang="en">orderDetails</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#reportsTo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#reportsTo">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supervisor"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#restaurantContactDetails1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#restaurantContactDetails1">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">contact details of the customer</rdfs:comment>
+        <rdfs:label xml:lang="en">contactDetails1</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#salary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#salary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#staffContactDetails2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#staffContactDetails2">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">contact details of the staff</rdfs:comment>
+        <rdfs:label xml:lang="en">contactDetails2</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="en">to uniquely identify each staff</rdfs:comment>
+        <rdfs:label xml:lang="en">staffID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#surfaceArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#surfaceArea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount">
+        <rdfs:comment>It is primitive concept representing amount
+money in rupees</rdfs:comment>
+        <rdfs:label>Amount</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+        <rdfs:comment xml:lang="en">It is primitive type which represents different places in the restaurant.</rdfs:comment>
+        <rdfs:label xml:lang="en">Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#AvailableTable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#AvailableTable">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ReservedTable"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+        <rdfs:comment>Table which is available for reservation.</rdfs:comment>
+        <rdfs:label>AvailableTable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+        <rdfs:comment>It is a primitive concept representing anything that can be drunk.</rdfs:comment>
+        <rdfs:label>Beverage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#preparedFor"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>It is prepared for exactly one order and contains exactly one Amount.</rdfs:comment>
+        <rdfs:label>Bill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BillingCounter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BillingCounter">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Area used by cashier to collect payments.</rdfs:comment>
+        <rdfs:label>BillingCounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BusyWaiter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BusyWaiter">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#serves"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+        <rdfs:comment>Waiter who serves more than 5 customers.</rdfs:comment>
+        <rdfs:label>BusyWaiter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#collectsPaymentFrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#generates"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#uses"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BillingCounter"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+        <rdfs:comment xml:lang="en">Staff who generates bill and collects payment of the order from the customer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cashier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plans"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#uses"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cooks"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+        <rdfs:comment xml:lang="en">Staff who cooks food.</rdfs:comment>
+        <rdfs:label xml:lang="en">Chef</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#China -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#China">
+        <rdfs:label>China</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ChineseDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ChineseDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#China"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+        <rdfs:comment>Dish which is originated from China.</rdfs:comment>
+        <rdfs:label>ChineseDish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#pays"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysFor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysTo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#places"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#visits"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+        <rdfs:comment xml:lang="en">Person who visits the restaurant, places order, eats and pays for his/her order</rdfs:comment>
+        <rdfs:label xml:lang="en">Customer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dessert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dessert">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MainCourse"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter"/>
+        <rdfs:comment>It is a Dish served at the end and is part of MenuCard.</rdfs:comment>
+        <rdfs:label>Dessert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#DiscountableOrder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#DiscountableOrder">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">10</owl:minQualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+        <rdfs:comment>It is order which contains more than 10 foods or beverages.</rdfs:comment>
+        <rdfs:label>DiscountableOrder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>It contains different types of food.</rdfs:comment>
+        <rdfs:label>Dish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Expenditure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Expenditure">
+        <rdfs:comment>It is primitive concept representing cost of maintaining and running restaurant.</rdfs:comment>
+        <rdfs:label>Expenditure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+        <rdfs:comment xml:lang="en">It is a primitive concept representing realworld entity food.</rdfs:comment>
+        <rdfs:label xml:lang="en">Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#India -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#India">
+        <rdfs:label>India</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#IndianDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#IndianDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#India"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+        <rdfs:comment>Dish which is originated from India.</rdfs:comment>
+        <rdfs:label>IndianDish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ItalianDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ItalianDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Italy"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+        <rdfs:comment>Dish which is originated from Italy.</rdfs:comment>
+        <rdfs:label>ItalianDish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Italy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Italy">
+        <rdfs:label>Italy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#maintainsCleanlinessAt"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+        <rdfs:comment xml:lang="en">Staff who maintains cleanliness at Restaurant.</rdfs:comment>
+        <rdfs:label xml:lang="en">Janitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Area used by chef to cook food.</rdfs:comment>
+        <rdfs:label xml:lang="en">Kitchen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MainCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MainCourse">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter"/>
+        <rdfs:comment>It is the main Dish and is part of MenuCard.</rdfs:comment>
+        <rdfs:label>MainCourse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#manages"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#manages"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+        <rdfs:comment xml:lang="en">Staff who manages a restaurant and staff of the restaurant.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manager</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plannedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>It contains food or beverages planned by the Chef.</rdfs:comment>
+        <rdfs:label>MenuCard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MexicanDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MexicanDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Mexico"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+        <rdfs:comment>Dish which is originated from Mexico</rdfs:comment>
+        <rdfs:label>MexicanDish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Mexico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Mexico">
+        <rdfs:label>Mexico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#NonVegFood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#NonVegFood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#VegFood"/>
+        <rdfs:comment>It is a food containing meat and animal tissues.</rdfs:comment>
+        <rdfs:label>NonVegFood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">It contains food or beverages.</rdfs:comment>
+        <rdfs:label xml:lang="en">Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PartyHall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PartyHall">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bookedBy"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Area used by and booked by the customer to throw the parties.</rdfs:comment>
+        <rdfs:label>PartyHall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+        <rdfs:comment xml:lang="en">It is a primitive concept representing the person.</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PrimeCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PrimeCustomer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysFor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+        <rdfs:comment>Customer having atleast one subscription.</rdfs:comment>
+        <rdfs:label>PrimeCustomer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial">
+        <rdfs:comment>Essentials needed to run a restaurant.</rdfs:comment>
+        <rdfs:label>RawMaterial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ReservedTable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ReservedTable">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bookedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+        <rdfs:comment>Table which is reserved by a customer.</rdfs:comment>
+        <rdfs:label>ReservedTable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RestRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RestRoom">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Area used by any person to rest.</rdfs:comment>
+        <rdfs:label>RestRoom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant">
+        <rdfs:comment xml:lang="en">It is a primitive concept representing a restaurant that prepares and serves food and drinks to customers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurateur">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#owns"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysFor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Expenditure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <rdfs:comment xml:lang="en">Person who owns a restaurant and pays for expenditure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Restaurateur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#worksAt"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+        <rdfs:comment xml:lang="en">Person who works at the restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">Staff</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>It is a Dish which is served before MainCourse and is part of MenuCard.</rdfs:comment>
+        <rdfs:label>Starter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#StorageArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#StorageArea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+        <rdfs:comment>Area used by staff and contains raw materials.</rdfs:comment>
+        <rdfs:label>StorageArea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+        <rdfs:comment>It is primitive concept which is purchased by the customer to avail special facilities from the restaurant.</rdfs:comment>
+        <rdfs:label>Subscription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supervisor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supervisor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#managesActively"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <rdfs:comment xml:lang="en">Staff who actively manages the restaurant staff.</rdfs:comment>
+        <rdfs:label xml:lang="en">Supervisor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supplier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supplier">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#supplies"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+        <rdfs:comment>Person who supplies raw materials to run the restaurant.</rdfs:comment>
+        <rdfs:label>Supplier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table">
+        <rdfs:comment xml:lang="en">It is a primitive concept representing a restaurant table used by customers to eat food.</rdfs:comment>
+        <rdfs:label xml:lang="en">Table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#assists"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+        <rdfs:comment xml:lang="en">Staff who assists customers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Valet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#VegFood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#VegFood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+        <rdfs:comment>It is a food that comes mostly from plants.</rdfs:comment>
+        <rdfs:label>VegFood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#serves"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#takes"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+        <rdfs:comment xml:lang="en">Staff who takes orders and serves customer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Waiter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#B1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#B1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+        <RestaurantOnto:pays rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#o1Amount"/>
+        <RestaurantOnto:paysFor rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1"/>
+        <RestaurantOnto:places rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1"/>
+        <RestaurantOnto:visits rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Resto1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Jayesh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Jayesh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+        <RestaurantOnto:serves rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C1"/>
+        <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1"/>
+        <RestaurantOnto:name>jayesh123</RestaurantOnto:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+        <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#tea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Resto1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Resto1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+        <RestaurantOnto:name>The Chennai Restaurant</RestaurantOnto:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ajay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ajay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PrimeCustomer"/>
+        <RestaurantOnto:paysFor rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#quarterlySubscription"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bill1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bill1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+        <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#o1Amount"/>
+        <RestaurantOnto:preparedFor rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#billingCounter1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#billingCounter1">
+        <RestaurantOnto:id>billC1</RestaurantOnto:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cashier1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cashier1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+        <RestaurantOnto:collectsPaymentFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C1"/>
+        <RestaurantOnto:generates rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bill1"/>
+        <RestaurantOnto:uses rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#billingCounter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#chef1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#chef1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+        <RestaurantOnto:cooks rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#samosa"/>
+        <RestaurantOnto:cooks rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#tea"/>
+        <RestaurantOnto:id>ch1</RestaurantOnto:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#kitchen1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#kitchen1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen"/>
+        <RestaurantOnto:usedBy rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#chef1"/>
+        <RestaurantOnto:id>k1</RestaurantOnto:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#menuCard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#menuCard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+        <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#samosa"/>
+        <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#tea"/>
+        <RestaurantOnto:plannedBy rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#chef1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#mgr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#mgr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#o1Amount -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#o1Amount">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+        <RestaurantOnto:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</RestaurantOnto:cost>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partyHall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partyHall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PartyHall"/>
+        <RestaurantOnto:bookedBy rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#quarterlySubscription -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#quarterlySubscription">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#reservedTable1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#reservedTable1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+        <RestaurantOnto:bookedBy rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#samosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#samosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#table1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#table1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,1689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Restaurant [
+<!ELEMENT Restaurant (Name, Restaurateur, Branch+)>
+<!ELEMENT Restaurateur (Name, Contact) >
+<!ELEMENT Branch (Address, MenuCard, Staff, Customer*, Table+, Area, Expenditure, Contact)>	
+<!ELEMENT Address (Street, City, Pin, State, Country)>
+<!ELEMENT Street (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT Pin (#PCDATA)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT Country (#PCDATA)>
+ 
+<!ELEMENT MenuCard (Starter,MainCourse,Dessert)> 
+<!ELEMENT Starter (Item+)>
+<!ELEMENT MainCourse (Item+)>
+<!ELEMENT Dessert (Item+)> 
+ 
+<!ELEMENT Item ((Food|Beverage), Price, Origin?)> 
+<!ATTLIST Item Id ID #REQUIRED>
+<!ELEMENT Food (#PCDATA)>
+<!ELEMENT Beverage (#PCDATA)>
+<!ELEMENT Origin (#PCDATA)>
+ 
+<!ELEMENT Staff (Manager+,Supervisor+,Chef+,Cashier+,Waiter+,Janitor+)>
+<!ELEMENT Manager (Name, Salary, Contact)>
+<!ELEMENT Supervisor (Name, Salary, Contact, ReportsTo)>
+<!ELEMENT Chef (Name, WorksAt, Salary, Contact, ReportsTo)>
+<!ELEMENT Cashier (Name, WorksAt, Salary, Contact, ReportsTo)>
+<!ELEMENT Waiter (Name, WorksAt, Salary, Contact, ReportsTo*)>
+<!ELEMENT Janitor (Name, WorksAt, Salary, Contact, ReportsTo*)>
+<!ATTLIST Manager Id ID #REQUIRED>
+<!ATTLIST Chef Id ID #REQUIRED>
+<!ATTLIST Supervisor Id ID #REQUIRED>
+<!ATTLIST Cashier Id ID #REQUIRED>
+<!ATTLIST Waiter Id ID #REQUIRED>
+<!ATTLIST Janitor Id ID #REQUIRED>
+<!ELEMENT WorksAt EMPTY>
+<!ATTLIST WorksAt areaId IDREF #REQUIRED>
+<!ELEMENT Salary (#PCDATA)>
+<!ELEMENT Contact (PhoneNo*, Email*)>
+<!ELEMENT ReportsTo EMPTY>
+<!ATTLIST ReportsTo staffId IDREF #REQUIRED>
+ 
+<!ELEMENT Customer (Name, Contact?,Subscription?,Order)>
+<!ATTLIST Customer Id ID #REQUIRED>
+<!ELEMENT Subscription (Date,Duration,Details,Price)>
+<!ELEMENT Duration (#PCDATA)>
+<!ELEMENT Details (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+ 
+<!ELEMENT Order (OrderedBy,Date,TableNo,OrderItem+,ServedBy,Amount)>
+<!ATTLIST Order OrderNo ID #REQUIRED>
+<!ELEMENT OrderedBy EMPTY>
+<!ATTLIST OrderedBy customerId IDREF #REQUIRED>
+<!ELEMENT Date (Day,Month,Year)>
+<!ELEMENT Day (#PCDATA)>
+<!ELEMENT Month (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+<!ELEMENT TableNo EMPTY>
+<!ATTLIST TableNo tableId IDREF #REQUIRED>
+<!ELEMENT OrderItem EMPTY>
+<!ATTLIST OrderItem itemId IDREF #REQUIRED>
+<!ELEMENT ServedBy EMPTY>
+<!ATTLIST ServedBy waiterId IDREF #REQUIRED>
+<!ELEMENT Amount (#PCDATA)>
+ 
+ 
+<!ELEMENT Table (TableStatus)>
+<!ATTLIST Table Id ID #REQUIRED>
+<!ELEMENT TableStatus (#PCDATA)>
+ 
+<!ELEMENT Expenditure (#PCDATA)>
+ 
+<!ELEMENT Area (Kitchen,BillingCounter,DiningArea,PartyHall+,RestRoom+,StorageRoom+)>
+<!ELEMENT Kitchen (SurfaceArea)>
+<!ELEMENT BillingCounter (SurfaceArea)>
+<!ELEMENT DiningArea (SurfaceArea)>
+<!ELEMENT PartyHall (SurfaceArea, BookedBy?)>
+<!ELEMENT RestRoom (SurfaceArea)>
+<!ELEMENT StorageRoom (SurfaceArea)>
+<!ATTLIST Kitchen Id ID #REQUIRED>
+<!ATTLIST BillingCounter Id ID #REQUIRED>
+<!ATTLIST DiningArea Id ID #REQUIRED>
+<!ATTLIST PartyHall Id ID #REQUIRED>
+<!ATTLIST RestRoom Id ID #REQUIRED>
+<!ATTLIST StorageRoom Id ID #REQUIRED>
+<!ELEMENT BookedBy EMPTY>
+<!ATTLIST BookedBy customerId IDREF #REQUIRED>
+<!ELEMENT SurfaceArea (#PCDATA)> 
+
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT  PhoneNo (#PCDATA)>
+<!ELEMENT  Email (#PCDATA)>
+]>
+
+
+
+
+
+<Restaurant>
+    <Name>Vijayalankar</Name>
+    <Restaurateur>
+        <Name>Virat Shetty</Name>
+        <Contact>
+            <PhoneNo>8888000022</PhoneNo>
+            <Email>ViratS@gmail.com</Email>
+        </Contact>
+    </Restaurateur>
+    <Branch>
+        <Address>
+           <Street>Adyar Road</Street>
+           <City>Chennai</City>
+           <Pin>600015</Pin>
+           <State>Tamil Nadu</State>
+           <Country>India</Country>
+        </Address>
+        <MenuCard>
+           <Starter>
+               <Item Id = "I101">
+                   <Food>Chilli Paneer</Food>
+                   <Price>100</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I102">
+                   <Food>Paneer 65</Food>
+                   <Price>120</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I103">
+                   <Food>Veg Manchurian</Food>
+                   <Price>150</Price>
+                   <Origin>China</Origin>
+               </Item>
+               <Item Id = "I104">
+                   <Food>Veg Lollipop</Food>
+                   <Price>120</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I105">
+                   <Food>Chilli Potato</Food>
+                   <Price>90</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I106">
+                   <Food>Chicken Manchurian</Food>
+                   <Price>120</Price>
+                   <Origin>India</Origin>
+               </Item>         
+               <Item Id = "I107">
+                   <Food>Gobi Manchurian</Food>
+                   <Price>110</Price>
+                   <Origin>India</Origin>
+               </Item>                                             
+           </Starter>
+           <MainCourse>
+               <Item Id = "I108">
+                   <Food>Hydrabadi Biryani</Food>
+                   <Price>140</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I109">
+                   <Food>Paneer Biryani</Food>
+                   <Price>140</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I110">
+                   <Food>Chicken Biryani</Food>
+                   <Price>170</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I111">
+                   <Food>Kashmiri Biryani</Food>
+                   <Price>170</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I112">
+                   <Food>Paneer Tikka Masala</Food>
+                   <Price>110</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I113">
+                   <Food>Butter Paneer Masala</Food>
+                   <Price>120</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I114">
+                   <Food>Kadhai Paneer</Food>
+                   <Price>120</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I115">
+                   <Food>Kashmiri Pulav</Food>
+                   <Price>120</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I116">
+                   <Food>Dal Khichadi</Food>
+                   <Price>150</Price>
+                   <Origin>India</Origin>
+               </Item>
+           </MainCourse>
+           <Dessert>
+               <Item Id = "I117">
+                   <Food>Gulab Jamun</Food>
+                   <Price>50</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I118">
+                   <Food>Ice Cream</Food>
+                   <Price>50</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I126">
+                   <Food>Brownie</Food>
+                   <Price>50</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I119">
+                   <Food>Ras Malai</Food>
+                   <Price>50</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I120">
+                   <Beverage>Thumps Up</Beverage>
+                   <Price>50</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I121">
+                   <Beverage>Coke</Beverage>
+                   <Price>50</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I122">
+                   <Beverage>Chocolate Shake</Beverage>
+                   <Price>50</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I123">
+                   <Beverage>Hot Chocolate</Beverage>
+                   <Price>50</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I124">
+                   <Beverage>Milk</Beverage>
+                   <Price>50</Price>
+                   <Origin>India</Origin>
+               </Item>
+               <Item Id = "I125">
+                   <Beverage>Strawberry Shake</Beverage>
+                   <Price>70</Price>
+                   <Origin>India</Origin>
+               </Item>
+           </Dessert>
+       </MenuCard>
+<Staff>
+<Manager Id="S001">
+                <Name>John</Name>
+                <Salary>50000</Salary>
+                <Contact>
+                    <PhoneNo>9123456789</PhoneNo>
+                    <Email>s002@gmail.com</Email>
+                </Contact>
+            </Manager>
+            <Manager Id="S002">
+                <Name>Tushar</Name>
+                <Salary>50000</Salary>
+                <Contact>
+                    <PhoneNo>8123456789</PhoneNo>
+                    <Email>s002@gmail.com</Email>
+                </Contact>
+            </Manager>
+
+            <Supervisor Id="S003">
+                <Name>Rupesh</Name>
+                <Salary>30000</Salary>
+                <Contact>
+                    <PhoneNo>7123456789</PhoneNo>
+                    <Email>s003@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+            </Supervisor>
+            <Supervisor Id="S004">
+                <Name>Rhythm</Name>
+                <Salary>30000</Salary>
+                <Contact>
+                    <PhoneNo>7223456789</PhoneNo>
+                    <Email>s004@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+            </Supervisor>
+            <Supervisor Id="S005">
+                <Name>Vansh</Name>
+                <Salary>30000</Salary>
+                <Contact>
+                    <PhoneNo>7323456789</PhoneNo>
+                    <Email>s005@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+            </Supervisor>
+            <Supervisor Id="S006">
+                <Name>Nitin</Name>
+                <Salary>30000</Salary>
+                <Contact>
+                    <PhoneNo>7623456789</PhoneNo>
+                    <Email>s006@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+            </Supervisor>
+            <Supervisor Id="S007">
+                <Name>Pranab</Name>
+                <Salary>30000</Salary>
+                <Contact>
+                    <PhoneNo>6223456789</PhoneNo>
+                    <Email>s004@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+            </Supervisor>
+
+
+            <Chef Id="S008">
+                <Name>Ajay</Name>
+                <WorksAt areaId="A04"/>
+                <Salary>25000</Salary>
+                <Contact>
+                    <PhoneNo>9123498765</PhoneNo>
+                    <Email>s008@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+            </Chef>
+            <Chef Id="S009">
+                <Name>Shubham Rane</Name>
+                <WorksAt areaId="A04"/>
+                <Salary>25000</Salary>
+                <Contact>
+                    <PhoneNo>9123568765</PhoneNo>
+                    <Email>s009@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+            </Chef>
+            
+
+
+            <Cashier Id="S010">
+                <Name>Amol </Name>
+                <WorksAt areaId="A03"/>
+                <Salary>20000</Salary>
+                <Contact>
+                    <PhoneNo>8998755744</PhoneNo>
+                    <Email>s010@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+            </Cashier>
+
+
+            <Waiter Id="S011">
+                <Name>Rakul</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8468755744</PhoneNo>
+                    <Email>s011@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+                <ReportsTo staffId="S003"/>
+            </Waiter>
+            <Waiter Id="S012">
+                <Name>Rahul Sharma</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8434755744</PhoneNo>
+                    <Email>s012@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+                <ReportsTo staffId="S003"/>
+            </Waiter>
+            <Waiter Id="S013">
+                <Name>Ramesh Dev</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8468755755</PhoneNo>
+                    <Email>s013@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+                <ReportsTo staffId="S003"/>
+            </Waiter>
+            <Waiter Id="S014">
+                <Name>Shridhar Tambe</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8468789744</PhoneNo>
+                    <Email>s014@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+                <ReportsTo staffId="S004"/>
+            </Waiter>
+            <Waiter Id="S015">
+                <Name>Pravin Tambe</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>19000</Salary>
+                <Contact>
+                    <PhoneNo>8468789711</PhoneNo>
+                    <Email>s015@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+                <ReportsTo staffId="S004"/>
+            </Waiter>
+            <Waiter Id="S016">
+                <Name>Manoj Kumar</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>5648789744</PhoneNo>
+                    <Email>s016@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+                <ReportsTo staffId="S004"/>
+            </Waiter>
+            <Waiter Id="S017">
+                <Name>Shridhar Gupta</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>17000</Salary>
+                <Contact>
+                    <PhoneNo>8568789744</PhoneNo>
+                    <Email>s017@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+                <ReportsTo staffId="S005"/>
+            </Waiter>
+            <Waiter Id="S018">
+                <Name>Manoj Tambe</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8400000001</PhoneNo>
+                    <Email>s018@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+                <ReportsTo staffId="S005"/>
+            </Waiter>
+            <Waiter Id="S019">
+                <Name>Ajay Rathod</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8400000002</PhoneNo>
+                    <Email>s019@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+                <ReportsTo staffId="S005"/>
+            </Waiter>
+            <Waiter Id="S020">
+                <Name>Pratik Tiwari</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8400000003</PhoneNo>
+                    <Email>s020@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S001"/>
+                <ReportsTo staffId="S005"/>
+            </Waiter>
+            <Waiter Id="S021">
+                <Name>Pradip Kumar</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8400000004</PhoneNo>
+                    <Email>s021@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+                <ReportsTo staffId="S006"/>
+            </Waiter>
+            <Waiter Id="S022">
+                <Name>Pradip Patil</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8400000005</PhoneNo>
+                    <Email>s022@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+                <ReportsTo staffId="S006"/>
+            </Waiter>
+            <Waiter Id="S023">
+                <Name>Shridhar Chaudhari</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>846878888</PhoneNo>
+                    <Email>s023@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+                <ReportsTo staffId="S006"/>
+            </Waiter>
+            <Waiter Id="S024">
+                <Name>Kuldeep Tambe</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18500</Salary>
+                <Contact>
+                    <PhoneNo>777789744</PhoneNo>
+                    <Email>s024@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+                <ReportsTo staffId="S006"/>
+            </Waiter>
+            <Waiter Id="S025">
+                <Name>Akash Patil</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8555789744</PhoneNo>
+                    <Email>s025@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+                <ReportsTo staffId="S006"/>
+            </Waiter>
+            <Waiter Id="S026">
+                <Name>Tushar kamat</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>8468858744</PhoneNo>
+                    <Email>s026@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+                <ReportsTo staffId="S007"/>
+            </Waiter>
+            <Waiter Id="S027">
+                <Name>Kumar Dev</Name>
+                <WorksAt areaId="A15"/>
+                <Salary>18000</Salary>
+                <Contact>
+                    <PhoneNo>5555589744</PhoneNo>
+                    <Email>s027@gmail.com</Email>
+                </Contact>
+                <ReportsTo staffId="S002"/>
+                <ReportsTo staffId="S007"/>
+            </Waiter>
+<Janitor Id="S028">
+               <Name>Jayesh Ghorpade</Name>
+               <WorksAt areaId="A04"/>
+               <Salary>15000</Salary>
+               <Contact>
+                   <PhoneNo>9856321478</PhoneNo>
+                   <Email>s028@gmail.com</Email>
+               </Contact>
+               <ReportsTo staffId="S001"/>
+               <ReportsTo staffId="S005"/>
+           </Janitor>
+           <Janitor Id="S029">
+               <Name>Shashikant Zine</Name>
+               <WorksAt areaId="A04"/>
+               <Salary>14000</Salary>
+               <Contact>
+                   <PhoneNo>9874563202</PhoneNo>
+                   <Email>s029@gmail.com</Email>
+               </Contact>
+               <ReportsTo staffId="S001"/>
+               <ReportsTo staffId="S006"/>
+           </Janitor>
+           <Janitor Id="S030">
+               <Name>Suraj Shelke</Name>
+               <WorksAt areaId="A15"/>
+               <Salary>16000</Salary>
+               <Contact>
+                   <PhoneNo>8569321478</PhoneNo>
+                   <Email>s030@gmail.com</Email>
+               </Contact>
+               <ReportsTo staffId="S001"/>
+               <ReportsTo staffId="S006"/>
+           </Janitor>
+           <Janitor Id="S031">
+               <Name>Tushar Unde</Name>
+               <WorksAt areaId="A15"/>
+               <Salary>16000</Salary>
+               <Contact>
+                   <PhoneNo>7458963214</PhoneNo>
+                   <Email>s031@gmail.com</Email>
+               </Contact>
+               <ReportsTo staffId="S001"/>
+               <ReportsTo staffId="S007"/>
+           </Janitor>
+           <Janitor Id="S032">
+               <Name>Shubham Shingi</Name>
+               <WorksAt areaId="A15"/>
+               <Salary>16000</Salary>
+               <Contact>
+                   <PhoneNo>8855226963</PhoneNo>
+                   <Email>s032@gmail.com</Email>
+               </Contact>
+               <ReportsTo staffId="S001"/>
+               <ReportsTo staffId="S007"/>
+           </Janitor>
+        </Staff>
+<Customer Id = "C00001">
+            <Name>Rajesh Kumar</Name>
+            <Contact>
+                <PhoneNo>7077253526</PhoneNo>
+                <Email>rajkum@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>05</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100001">
+                <OrderedBy customerId = "C00001"/>
+                <Date>
+                    <Day>20</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T12"/>
+                <OrderItem itemId = "I103" />
+    			<OrderItem itemId = "I120" />
+    			<OrderItem itemId = "I111" />
+                <ServedBy waiterId = "S011" />
+                <Amount>252</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00002">
+            <Name>Ajay Kumar</Name>
+            <Contact>
+                <PhoneNo>7077254526</PhoneNo>
+                <Email>ajakum@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100002">
+                <OrderedBy customerId = "C00002"/>
+                <Date>
+                    <Day>20</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T07"/>
+                <OrderItem itemId = "I113" />
+    			<OrderItem itemId = "I107" />
+    			<OrderItem itemId = "I106" />
+                <ServedBy waiterId = "S012" />
+                <Amount>153</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00003">
+            <Name>Mukesh Kumar</Name>
+            <Contact>
+                <PhoneNo>7077425963</PhoneNo>
+                <Email>mukkum@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>01</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100003">
+                <OrderedBy customerId = "C00003"/>
+                <Date>
+                    <Day>20</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T02"/>
+                <OrderItem itemId = "I107" />
+    			<OrderItem itemId = "I117" />
+    			<OrderItem itemId = "I120" />
+                <ServedBy waiterId = "S013" />
+                <Amount>100</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00004">
+            <Name>Lavi Junwal</Name>
+            <Contact>
+                <PhoneNo>8010254526</PhoneNo>
+                <Email>lavjun@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100004">
+                <OrderedBy customerId = "C00004"/>
+                <Date>
+                    <Day>20</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T04"/>
+                <OrderItem itemId = "I113" />
+    			<OrderItem itemId = "I122" />
+    			<OrderItem itemId = "I106" />
+                <ServedBy waiterId = "S014" />
+                <Amount>341</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00005">
+            <Name>Karan Jaiswal</Name>
+            <Contact>
+                <PhoneNo>7077127469</PhoneNo>
+                <Email>karjai@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>01</Day>
+                    <Month>February</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100005">
+                <OrderedBy customerId = "C00005"/>
+                <Date>
+                    <Day>21</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T01"/>
+                <OrderItem itemId = "I103" />
+    			<OrderItem itemId = "I119" />
+    			<OrderItem itemId = "I101" />
+                <ServedBy waiterId = "S014" />
+                <Amount>286</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00006">
+            <Name>Ankit Gope</Name>
+            <Contact>
+                <PhoneNo>8120365956</PhoneNo>
+                <Email>ankgop@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100006">
+                <OrderedBy customerId = "C00006"/>
+                <Date>
+                    <Day>21</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T08"/>
+                <OrderItem itemId = "I112" />
+    			<OrderItem itemId = "I101" />
+    			<OrderItem itemId = "I106" />
+                <ServedBy waiterId = "S015" />
+                <Amount>190</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00007">
+            <Name>Irshad Khan</Name>
+            <Contact>
+                <PhoneNo>7412365256</PhoneNo>
+                <Email>irskha@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>15</Day>
+                    <Month>January</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>365</Duration>
+                <Details>Annual</Details>
+                <Price>899</Price>
+            </Subscription>
+            <Order OrderNo = "D100007">
+                <OrderedBy customerId = "C00007"/>
+                <Date>
+                    <Day>21</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T03"/>
+                <OrderItem itemId = "I115" />
+			    <OrderItem itemId = "I119" />
+    			<OrderItem itemId = "I120" />
+    			<OrderItem itemId = "I118" />
+                <ServedBy waiterId = "S015" />
+                <Amount>460</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00008">
+            <Name>Lalit Yadav</Name>
+            <Contact>
+                <PhoneNo>8010147963</PhoneNo>
+                <Email>lalyad@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100008">
+                <OrderedBy customerId = "C00008"/>
+                <Date>
+                    <Day>21</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T09"/>
+                <OrderItem itemId = "I112" />
+			    <OrderItem itemId = "I102" />
+                <ServedBy waiterId = "S019" />
+                <Amount>160</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00009">
+            <Name>Ganesh Karnam</Name>
+            <Contact>
+                <PhoneNo>7625963258</PhoneNo>
+                <Email>gankar@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>01</Day>
+                    <Month>January</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details>Quarterly</Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100009">
+                <OrderedBy customerId = "C00009"/>
+                <Date>
+                    <Day>21</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T03"/>
+                <OrderItem itemId = "I115" />
+    			<OrderItem itemId = "I114" />
+    			<OrderItem itemId = "I120" />
+    			<OrderItem itemId = "I118" />
+                <ServedBy waiterId = "S016" />
+                <Amount>386</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00010">
+            <Name>Sai Santosh</Name>
+            <Contact>
+                <PhoneNo>8014258259</PhoneNo>
+                <Email>saisan@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100010">
+                <OrderedBy customerId = "C00010"/>
+                <Date>
+                    <Day>21</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T13"/>
+                <OrderItem itemId = "I102" />
+                <OrderItem itemId = "I109" />
+                <ServedBy waiterId = "S018" />
+                <Amount>110</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00011">
+            <Name>Goutam Sharma</Name>
+            <Contact>
+                <PhoneNo>9437125896</PhoneNo>
+                <Email>gousha@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>01</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100011">
+                <OrderedBy customerId = "C00011"/>
+                <Date>
+                    <Day>22</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T11"/>
+                <OrderItem itemId = "I105" />
+    			<OrderItem itemId = "I106" />
+    			<OrderItem itemId = "I107" />
+    			<OrderItem itemId = "I108" />
+                <ServedBy waiterId = "S017" />
+                <Amount>260</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00012">
+            <Name>Yash Pilla</Name>
+            <Contact>
+                <PhoneNo>8014125369</PhoneNo>
+                <Email>yaspil@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100012">
+                <OrderedBy customerId = "C00012"/>
+                <Date>
+                    <Day>22</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T05"/>
+                <OrderItem itemId = "I102" />
+			<OrderItem itemId = "I102" />
+			<OrderItem itemId = "I106" />
+			<OrderItem itemId = "I116" />
+            <OrderItem itemId = "I116" />
+			<OrderItem itemId = "I122" />
+                <ServedBy waiterId = "S016" />
+                <Amount>650</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00013">
+            <Name>Soumya Kanth</Name>
+            <Contact>
+                <PhoneNo>7402962535</PhoneNo>
+                <Email>soukan@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>25</Day>
+                    <Month>February</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100013">
+                <OrderedBy customerId = "C00013"/>
+                <Date>
+                    <Day>22</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T02"/>
+                <OrderItem itemId = "I103" />
+    			<OrderItem itemId = "I106" />
+    			<OrderItem itemId = "I123" />
+    			<OrderItem itemId = "I124" />
+    			<OrderItem itemId = "I124" />
+                <ServedBy waiterId = "S018" />
+                <Amount>679</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00014">
+            <Name>Sanjay Raut</Name>
+            <Contact>
+                <PhoneNo>9523684200</PhoneNo>
+                <Email>sanrau@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100014">
+                <OrderedBy customerId = "C00014"/>
+                <Date>
+                    <Day>22</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T14"/>
+                <OrderItem itemId = "I101" />
+    			<OrderItem itemId = "I102" />
+    			<OrderItem itemId = "I106" />
+                <ServedBy waiterId = "S020" />
+                <Amount>159</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00015">
+            <Name>Ritesh Rane</Name>
+            <Contact>
+                <PhoneNo>8002123654</PhoneNo>
+                <Email>karjai@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>13</Day>
+                    <Month>February</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100015">
+                <OrderedBy customerId = "C00015"/>
+                <Date>
+                    <Day>22</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T09"/>
+                <OrderItem itemId = "I102" />
+    			<OrderItem itemId = "I117" />
+    			<OrderItem itemId = "I124" />
+                <ServedBy waiterId = "S021" />
+                <Amount>148</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00016">
+            <Name>Ranjan Kumar</Name>
+            <Contact>
+                <PhoneNo>7978256236</PhoneNo>
+                <Email>ranjan@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100016">
+                <OrderedBy customerId = "C00016"/>
+                <Date>
+                    <Day>23</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T14"/>
+                <OrderItem itemId = "I101" />
+    			<OrderItem itemId = "I109" />
+    			<OrderItem itemId = "I112" />
+    			<OrderItem itemId = "I123" />
+    			<OrderItem itemId = "I124" />
+    			<OrderItem itemId = "I125" />
+                <ServedBy waiterId = "S022" />
+                <Amount>750</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00017">
+            <Name>Rashmi Kumari</Name>
+            <Contact>
+                <PhoneNo>6002412563</PhoneNo>
+                <Email>raskum@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>18</Day>
+                    <Month>January</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>365</Duration>
+                <Details>Annual</Details>
+                <Price>899</Price>
+            </Subscription>
+            <Order OrderNo = "D100017">
+                <OrderedBy customerId = "C00017"/>
+                <Date>
+                    <Day>23</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T04"/>
+                <OrderItem itemId = "I105" />
+    			<OrderItem itemId = "I109" />
+    			<OrderItem itemId = "I120" />
+    			<OrderItem itemId = "I123" />
+                <ServedBy waiterId = "S023" />
+                <Amount>468</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00018">
+            <Name>Mohit Mehra</Name>
+            <Contact>
+                <PhoneNo>7458963210</PhoneNo>
+                <Email>mohmeh@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100018">
+                <OrderedBy customerId = "C00018"/>
+                <Date>
+                    <Day>23</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T02"/>
+                <OrderItem itemId = "I113" />
+			    <OrderItem itemId = "I124" />
+                <ServedBy waiterId = "S024" />
+                <Amount>150</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00019">
+            <Name>Saurabh Mahajan</Name>
+            <Contact>
+                <PhoneNo>7495169384</PhoneNo>
+                <Email>saumah@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>16</Day>
+                    <Month>January</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details>Annual</Details>
+                <Price>899</Price>
+            </Subscription>
+            <Order OrderNo = "D100019">
+                <OrderedBy customerId = "C00019"/>
+                <Date>
+                    <Day>23</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T03"/>
+                <OrderItem itemId = "I115" />
+    			<OrderItem itemId = "I104" />
+    			<OrderItem itemId = "I123" />
+    			<OrderItem itemId = "I118" />
+                <ServedBy waiterId = "S025" />
+                <Amount>250</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00020">
+            <Name>Akash Gupta</Name>
+            <Contact>
+                <PhoneNo>8695236148</PhoneNo>
+                <Email>akagup@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100020">
+                <OrderedBy customerId = "C00020"/>
+                <Date>
+                    <Day>23</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T08"/>
+			    <OrderItem itemId = "I108" />
+                <ServedBy waiterId = "S026" />
+                <Amount>140</Amount>
+            </Order>
+</Customer>
+
+
+
+<Customer Id = "C00021">
+            <Name>Vivek Saini</Name>
+            <Contact>
+                <PhoneNo>7064125896</PhoneNo>
+                <Email>vivsai@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>01</Day>
+                    <Month>February</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly</Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100021">
+                <OrderedBy customerId = "C00021"/>
+                <Date>
+                    <Day>24</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T06"/>
+                <OrderItem itemId = "I115" />
+			    <OrderItem itemId = "I118" />
+                <ServedBy waiterId = "S027" />
+                <Amount>160</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00022">
+            <Name>Raju Babu</Name>
+            <Contact>
+                <PhoneNo>8526963749</PhoneNo>
+                <Email>rajbab@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100022">
+                <OrderedBy customerId = "C00022"/>
+                <Date>
+                    <Day>24</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T15"/>
+                <OrderItem itemId = "I102" />
+    			<OrderItem itemId = "I102" />
+    			<OrderItem itemId = "I106" />
+    			<OrderItem itemId = "I108" />
+                <OrderItem itemId = "I116" />
+    			<OrderItem itemId = "I123" />
+                <ServedBy waiterId = "S027" />
+                <Amount>821</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00023">
+            <Name>Divya Rani</Name>
+            <Contact>
+                <PhoneNo>7401900535</PhoneNo>
+                <Email>divran@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>25</Day>
+                    <Month>February</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100023">
+                <OrderedBy customerId = "C00023"/>
+                <Date>
+                    <Day>24</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T02"/>
+                <OrderItem itemId = "I108" />
+    			<OrderItem itemId = "I108" />
+    			<OrderItem itemId = "I123" />
+    			<OrderItem itemId = "I124" />
+                <ServedBy waiterId = "S026" />
+                <Amount>305</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00024">
+            <Name>Ashwini Priya</Name>
+            <Contact>
+                <PhoneNo>9523400200</PhoneNo>
+                <Email>ashpri@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100024">
+                <OrderedBy customerId = "C00024"/>
+                <Date>
+                    <Day>24</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T07"/>
+                <OrderItem itemId = "I101" />
+    			<OrderItem itemId = "I112" />
+    			<OrderItem itemId = "I116" />
+                <ServedBy waiterId = "S025" />
+                <Amount>289</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00025">
+            <Name>Vishal Rawat</Name>
+            <Contact>
+                <PhoneNo>8002126654</PhoneNo>
+                <Email>visraw@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>10</Day>
+                    <Month>December</Month>
+                    <Year>2021</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100025">
+                <OrderedBy customerId = "C00025"/>
+                <Date>
+                    <Day>24</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T11"/>
+                <OrderItem itemId = "I102" />
+    			<OrderItem itemId = "I118" />
+    			<OrderItem itemId = "I118" />
+                <ServedBy waiterId = "S024" />
+                <Amount>327</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00026">
+            <Name>Kanak Modi</Name>
+            <Contact>
+                <PhoneNo>7978458961</PhoneNo>
+                <Email>kanmod@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100026">
+                <OrderedBy customerId = "C00026"/>
+                <Date>
+                    <Day>25</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T06"/>
+                <OrderItem itemId = "I102" />
+    			<OrderItem itemId = "I105" />
+    			<OrderItem itemId = "I119" />
+    			<OrderItem itemId = "I123" />
+    			<OrderItem itemId = "I124" />
+    			<OrderItem itemId = "I125" />
+                <ServedBy waiterId = "S023" />
+                <Amount>560</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00027">
+            <Name>Samay Raina</Name>
+            <Contact>
+                <PhoneNo>7002456563</PhoneNo>
+                <Email>samrai@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>02</Day>
+                    <Month>January</Month>
+                    <Year>2022</Year>
+                </Date>
+                <Duration>365</Duration>
+                <Details>Annual</Details>
+                <Price>899</Price>
+            </Subscription>
+            <Order OrderNo = "D100027">
+                <OrderedBy customerId = "C00027"/>
+                <Date>
+                    <Day>25</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T15"/>
+                <OrderItem itemId = "I115" />
+    			<OrderItem itemId = "I119" />
+    			<OrderItem itemId = "I122" />
+    			<OrderItem itemId = "I123" />
+                <ServedBy waiterId = "S022" />
+                <Amount>425</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00028">
+            <Name>Abhijit Rao</Name>
+            <Contact>
+                <PhoneNo>7458002361</PhoneNo>
+                <Email>abhrao@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100028">
+                <OrderedBy customerId = "C00028"/>
+                <Date>
+                    <Day>25</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T05"/>
+                <OrderItem itemId = "I113" />
+			    <OrderItem itemId = "I114" />
+                <ServedBy waiterId = "S021" />
+                <Amount>100</Amount>
+            </Order>
+</Customer>
+
+<Customer Id = "C00029">
+            <Name>Rakesh Rathod</Name>
+            <Contact>
+                <PhoneNo>749599384</PhoneNo>
+                <Email>rakrat@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100029">
+                <OrderedBy customerId = "C00029"/>
+                <Date>
+                    <Day>25</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T03"/>
+                <OrderItem itemId = "I115" />
+    			<OrderItem itemId = "I104" />
+    			<OrderItem itemId = "I118" />
+                <ServedBy waiterId = "S020" />
+                <Amount>115</Amount>
+            </Order>
+</Customer>
+<Customer Id = "C00030">
+            <Name>Sonali Gupta</Name>
+            <Contact>
+                <PhoneNo>7008120063</PhoneNo>
+                <Email>songup@gmail.com</Email>
+            </Contact>
+            <Order OrderNo = "D100030">
+                <OrderedBy customerId = "C00030"/>
+                <Date>
+                    <Day>25</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T14"/>
+    			<OrderItem itemId = "I108" />
+    			<OrderItem itemId = "I119" />
+                <ServedBy waiterId = "S011" />
+                <Amount>95</Amount>
+            </Order>
+</Customer>
+<Customer Id = "C00031">
+            <Name>Pranay Bahekar</Name>
+            <Contact>
+                <PhoneNo>80126654</PhoneNo>
+                <Email>Pranw@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>18</Day>
+                    <Month>March</Month>
+                    <Year>2021</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100031">
+                <OrderedBy customerId = "C00031"/>
+                <Date>
+                    <Day>26</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T15"/>
+                <OrderItem itemId = "I110" />
+                <OrderItem itemId = "I107" />
+                <OrderItem itemId = "I104" />
+                <ServedBy waiterId = "S020" />
+                <Amount>160</Amount>
+            </Order>
+        </Customer>
+        <Customer Id = "C00032">
+            <Name>Pranay Chuttar</Name>
+            <Contact>
+                <PhoneNo>801183554</PhoneNo>
+                <Email>pchuttar@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>20</Day>
+                    <Month>June</Month>
+                    <Year>2021</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100032">
+                <OrderedBy customerId = "C00032"/>
+                <Date>
+                    <Day>27</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T14"/>
+                <OrderItem itemId = "I120" />
+                <OrderItem itemId = "I117" />
+                <OrderItem itemId = "I104" />
+                <ServedBy waiterId = "S011" />
+                <Amount>180</Amount>
+            </Order>
+        </Customer>
+        <Customer Id = "C00033">
+            <Name>Pranay Mahajan</Name>
+            <Contact>
+                <PhoneNo>46138684</PhoneNo>
+                <Email>pmahajan@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>10</Day>
+                    <Month>June</Month>
+                    <Year>2021</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100033">
+                <OrderedBy customerId = "C00033"/>
+                <Date>
+                    <Day>28</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T11"/>
+                <OrderItem itemId = "I121" />
+                <OrderItem itemId = "I118" />
+                <OrderItem itemId = "I105" />
+                <ServedBy waiterId = "S012" />
+                <Amount>210</Amount>
+            </Order>
+        </Customer>
+        <Customer Id = "C00034">
+            <Name>Nitin Dada</Name>
+            <Contact>
+                <PhoneNo>1384315865</PhoneNo>
+                <Email>nitin@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>2</Day>
+                    <Month>July</Month>
+                    <Year>2021</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100034">
+                <OrderedBy customerId = "C00034"/>
+                <Date>
+                    <Day>29</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T02"/>
+                <OrderItem itemId = "I120" />
+                <OrderItem itemId = "I107" />
+                <OrderItem itemId = "I114" />
+                <ServedBy waiterId = "S021" />
+                <Amount>175</Amount>
+            </Order>
+        </Customer>
+        <Customer Id = "C00035">
+            <Name>Bhagwat Shukla</Name>
+            <Contact>
+                <PhoneNo>14318362</PhoneNo>
+                <Email>sukla@gmail.com</Email>
+            </Contact>
+            <Subscription>
+                <Date>
+                    <Day>21</Day>
+                    <Month>May</Month>
+                    <Year>2021</Year>
+                </Date>
+                <Duration>90</Duration>
+                <Details> Quarterly </Details>
+                <Price>300</Price>
+            </Subscription>
+            <Order OrderNo = "D100035">
+                <OrderedBy customerId = "C00035"/>
+                <Date>
+                    <Day>30</Day>
+                    <Month>March</Month>
+                    <Year>2022</Year>
+                </Date>
+                <TableNo tableId = "T04"/>
+                <OrderItem itemId = "I121" />
+                <OrderItem itemId = "I118" />
+                <OrderItem itemId = "I107" />
+                <ServedBy waiterId = "S019" />
+                <Amount>149</Amount>
+            </Order>
+        </Customer>
+
+       
+
+
+        <Table Id = "T01">
+            <TableStatus>Reserved</TableStatus>  
+        </Table>
+
+        <Table Id = "T02">
+            <TableStatus>Available</TableStatus>  
+        </Table>
+
+
+        <Table Id = "T03">
+            <TableStatus>Reserved</TableStatus>  
+        </Table>
+
+        <Table Id = "T04">
+            <TableStatus>Available</TableStatus>  
+        </Table>
+
+        <Table Id = "T05">
+            <TableStatus>Reserved</TableStatus>  
+        </Table>
+
+        <Table Id = "T06">
+            <TableStatus>Reserved</TableStatus>  
+        </Table>
+
+        <Table Id = "T07">
+            <TableStatus>Reserved</TableStatus>  
+        </Table>
+
+        <Table Id = "T08">
+            <TableStatus>Reserved</TableStatus>  
+        </Table>
+
+        <Table Id = "T09">
+            <TableStatus>Available</TableStatus>  
+        </Table>
+
+        <Table Id = "T10">
+            <TableStatus>Reserved</TableStatus>  
+        </Table>
+
+        <Table Id = "T11">
+            <TableStatus>Reserved</TableStatus>  
+        </Table>
+
+        <Table Id = "T12">
+            <TableStatus>Available</TableStatus>  
+        </Table>
+
+        <Table Id = "T13">
+            <TableStatus>Reserved</TableStatus>  
+        </Table>
+
+        <Table Id = "T14">
+            <TableStatus>Available</TableStatus>  
+        </Table>
+
+        <Table Id = "T15">
+            <TableStatus>Reserved</TableStatus>  
+        </Table>
+
+       <Area>
+            <Kitchen Id = "A04">
+                <SurfaceArea>500</SurfaceArea>
+            </Kitchen>
+            <BillingCounter Id = "A03">
+                <SurfaceArea>100</SurfaceArea>
+            </BillingCounter>
+            <DiningArea Id = "A15">
+                <SurfaceArea>4618</SurfaceArea>
+            </DiningArea>
+            <PartyHall Id = "A01">
+                <SurfaceArea>1000</SurfaceArea>
+                <BookedBy customerId = "C00001"/>
+            </PartyHall>
+            <PartyHall Id = "A02">
+                <SurfaceArea>800</SurfaceArea>
+                <BookedBy customerId = "C00002"/>
+            </PartyHall>
+            <RestRoom Id = "A05">
+                <SurfaceArea>100</SurfaceArea>
+            </RestRoom>
+            <RestRoom Id = "A06">
+                <SurfaceArea>100</SurfaceArea>
+            </RestRoom>
+            <RestRoom Id = "A12">
+                <SurfaceArea>100</SurfaceArea>
+            </RestRoom>
+            <RestRoom Id = "A13">
+                <SurfaceArea>100</SurfaceArea>
+            </RestRoom>
+            <RestRoom Id = "A14">
+                <SurfaceArea>100</SurfaceArea>
+            </RestRoom>
+            <StorageRoom Id = "A07"> 
+                <SurfaceArea>2000</SurfaceArea>
+            </StorageRoom>
+            <StorageRoom Id = "A08"> 
+                <SurfaceArea>1000</SurfaceArea>
+            </StorageRoom>
+            <StorageRoom Id = "A09"> 
+                <SurfaceArea>1500</SurfaceArea>
+            </StorageRoom>
+            <StorageRoom Id = "A10"> 
+                <SurfaceArea>1800</SurfaceArea>
+            </StorageRoom>
+            <StorageRoom Id = "A11"> 
+                <SurfaceArea>1130</SurfaceArea>
+            </StorageRoom>
+        </Area>
+        
+        <Expenditure>150000000</Expenditure>
+
+        <Contact>
+            <PhoneNo>9134685254</PhoneNo>
+            <Email>vijayalankar@gmail.com</Email>
+        </Contact>
+
+    </Branch>
+</Restaurant>

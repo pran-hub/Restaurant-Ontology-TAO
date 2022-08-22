@@ -1,0 +1,2604 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/yashasvi/ontologies/2021/4/Restaurant"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/yashasvi/ontologies/2021/4/Restaurant">
+    <Prefix name="" IRI="http://www.semanticweb.org/yashasvi/ontologies/2021/4/Restaurant"/>
+    <Prefix name="owl" IRI="ontology:Restaurant"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Ontology for Restaurant.
+We humans as organisms are dependent on food for survival and as the proverb goes “Variety is the spice of life”, restaurants are an integral part of our life providing us the options of multi-cuisine dishes.
+We picked the Restaurant ontology as we can correlate with the roles in our surroundings and encounter majority of the listed concepts in our day to day life. Further, exploring the restaurant domain enriches our knowledge about various roles and functionalities of a Restaurant, which otherwise would not have been possible for us to explore e.g. modelling various sections etc.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Area"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BillCounter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Busboy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cashier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DailySpecial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dessert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiningArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Janitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kitchen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MainCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MenuCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Order"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurateur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Starter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supervisor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Valet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waiter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assists"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#books"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cleans"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#collectsPaymentFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cooks"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maintainsCleanlinessAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maintainsSafetyAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#orders"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#overseesActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#paysFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#plans1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#plans2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#serves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supports"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#visits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#consistOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#orderDetails"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#restaurantContactDetails1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#salary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#staffContactDetails2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#staffID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R0qU7wuEguHugPgLcDEYIT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7Hoj22zihm7N3DX54L0gT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7MDXwYnel55Nw8qXM2tnRJ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7c8APBgzF138xHeaeJ2cTX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R82UEMDa14TAI696qHwjNM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8as2YjLbV2ErhuIpKqkZE8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8u4nrEwUgNgcg9sDXbPMGg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9BZggPZBmnWBDDaAi7VSYY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9CdLjT4WupOMwqefopvHq9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9I16JvEKq3NVs5MWv3ImHU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9bZtvgKh2UbIjlSwKxdR7X"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cNMrkLB19P83lVjnP87FK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9fpdPf7VMkbkvOTfOyWXm7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9wNaR9im81RAMn7RLFK8F"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBCE2apllWU3NIUoyvNfEt1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBLsrshjGmfs6js3VCnHIoq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfOLEyxKKQoMTcHj50EQVZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBhXM6vP9Aunc4nMOZIWtFr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBlcT9rZdhBpkJxhyPL27fj"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBluARXtwaKipCaNl10cH2H"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx6JiEU5eoE4akcyFv4mZB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx8U1b21oCaIrxpKrh7r8B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBzUYyDy4hAFmmnHjDaKWXW"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RC0hMPFsADYWj6Y9m264CE9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RC3UWq9eIygd7YU2ssHYvU3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCIKgZdEjmZFXsi8q95f7Lo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCIL0299ZwlMahlcsHtbX7w"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCTc3w6hsLLbxvy81N0gQFL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCmp2PXj2b7C75PRFThVlKn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDQkuvSMn0rL6522Q1aJ55j"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RGW4sNYshAAXJPn8BHsQLW"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RKDmBU3XWCxQPQ3Gmjh1tY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RVVv9mRGsDqdsm7Ioj2k9d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RX6V7u46S3fERcx7WjJX3I"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RZC3BTUvxiiVSX0btt8jxZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RcGdhNTrFdv7wPADWNZbxu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RjnuFER5dg9Srme7cp3rMb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Afghani_Paneer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dragon_Rolls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Radisson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Table1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Table2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Table3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#counter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#da1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#da2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#da3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kitchen1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kitchen2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#m1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#o1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#o2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#r1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#r2"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Busboy"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Staff"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#cleans"/>
+                <Class IRI="#Table"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#supports"/>
+                <Class IRI="#Staff"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Cashier"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Staff"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#collectsPaymentFrom"/>
+                <Class IRI="#Customer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Chef"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Staff"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#cooks"/>
+                <Class IRI="#Food"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#plans1"/>
+                <Class IRI="#DailySpecial"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#plans1"/>
+                <Class IRI="#MenuCard"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Customer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectUnionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#books"/>
+                        <Class IRI="#Table"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#orders"/>
+                        <Class IRI="#Food"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#paysFor"/>
+                        <Class IRI="#Order"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#visits"/>
+                    <Class IRI="#Restaurant"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Janitor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Staff"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#maintainsCleanlinessAt"/>
+                <Class IRI="#Restaurant"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#maintainsSafetyAt"/>
+                <Class IRI="#Restaurant"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Manager"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Staff"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#manages"/>
+                <Class IRI="#Restaurant"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Restaurateur"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#owns"/>
+                <Class IRI="#Restaurant"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Staff"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#worksAt"/>
+                <Class IRI="#Restaurant"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Supervisor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Staff"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#overseesActivity"/>
+                <Class IRI="#Staff"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Valet"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Staff"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#assists"/>
+                <Class IRI="#Customer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Waiter"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Staff"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#serves"/>
+                <Class IRI="#Food"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#takes"/>
+                <Class IRI="#Order"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Beverage"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BillCounter"/>
+        <Class IRI="#Area"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Busboy"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cashier"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chef"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DailySpecial"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dessert"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiningArea"/>
+        <Class IRI="#Area"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Janitor"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kitchen"/>
+        <Class IRI="#Area"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MainCourse"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manager"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestRoom"/>
+        <Class IRI="#Area"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurateur"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Starter"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supervisor"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Valet"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waiter"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Food"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#DailySpecial"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R0qU7wuEguHugPgLcDEYIT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R0qU7wuEguHugPgLcDEYIT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dessert"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7Hoj22zihm7N3DX54L0gT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7Hoj22zihm7N3DX54L0gT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7MDXwYnel55Nw8qXM2tnRJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MainCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7MDXwYnel55Nw8qXM2tnRJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DailySpecial"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7c8APBgzF138xHeaeJ2cTX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7c8APBgzF138xHeaeJ2cTX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MainCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7c8APBgzF138xHeaeJ2cTX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R82UEMDa14TAI696qHwjNM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R82UEMDa14TAI696qHwjNM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8as2YjLbV2ErhuIpKqkZE8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurateur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8as2YjLbV2ErhuIpKqkZE8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DailySpecial"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8u4nrEwUgNgcg9sDXbPMGg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8u4nrEwUgNgcg9sDXbPMGg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dessert"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9BZggPZBmnWBDDaAi7VSYY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9BZggPZBmnWBDDaAi7VSYY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9CdLjT4WupOMwqefopvHq9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MainCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9CdLjT4WupOMwqefopvHq9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9I16JvEKq3NVs5MWv3ImHU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9I16JvEKq3NVs5MWv3ImHU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DailySpecial"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9bZtvgKh2UbIjlSwKxdR7X"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9bZtvgKh2UbIjlSwKxdR7X"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cNMrkLB19P83lVjnP87FK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cNMrkLB19P83lVjnP87FK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9fpdPf7VMkbkvOTfOyWXm7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MainCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9fpdPf7VMkbkvOTfOyWXm7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9wNaR9im81RAMn7RLFK8F"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MainCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9wNaR9im81RAMn7RLFK8F"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Waiter"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dessert"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBCE2apllWU3NIUoyvNfEt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBCE2apllWU3NIUoyvNfEt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBLsrshjGmfs6js3VCnHIoq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DailySpecial"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBLsrshjGmfs6js3VCnHIoq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBLsrshjGmfs6js3VCnHIoq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfOLEyxKKQoMTcHj50EQVZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfOLEyxKKQoMTcHj50EQVZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dessert"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBhXM6vP9Aunc4nMOZIWtFr"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBhXM6vP9Aunc4nMOZIWtFr"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBlcT9rZdhBpkJxhyPL27fj"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MainCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBlcT9rZdhBpkJxhyPL27fj"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBluARXtwaKipCaNl10cH2H"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurateur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBluARXtwaKipCaNl10cH2H"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cashier"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx6JiEU5eoE4akcyFv4mZB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx6JiEU5eoE4akcyFv4mZB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx8U1b21oCaIrxpKrh7r8B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx8U1b21oCaIrxpKrh7r8B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBzUYyDy4hAFmmnHjDaKWXW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MainCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBzUYyDy4hAFmmnHjDaKWXW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RC0hMPFsADYWj6Y9m264CE9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MainCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RC0hMPFsADYWj6Y9m264CE9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dessert"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RC3UWq9eIygd7YU2ssHYvU3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RC3UWq9eIygd7YU2ssHYvU3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dessert"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCIKgZdEjmZFXsi8q95f7Lo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCIKgZdEjmZFXsi8q95f7Lo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dessert"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCIL0299ZwlMahlcsHtbX7w"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCIL0299ZwlMahlcsHtbX7w"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dessert"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCTc3w6hsLLbxvy81N0gQFL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCTc3w6hsLLbxvy81N0gQFL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCmp2PXj2b7C75PRFThVlKn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCmp2PXj2b7C75PRFThVlKn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Busboy"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDQkuvSMn0rL6522Q1aJ55j"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDQkuvSMn0rL6522Q1aJ55j"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Valet"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RGW4sNYshAAXJPn8BHsQLW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MainCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RGW4sNYshAAXJPn8BHsQLW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dessert"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RKDmBU3XWCxQPQ3Gmjh1tY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RKDmBU3XWCxQPQ3Gmjh1tY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DailySpecial"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RVVv9mRGsDqdsm7Ioj2k9d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RVVv9mRGsDqdsm7Ioj2k9d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RX6V7u46S3fERcx7WjJX3I"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RX6V7u46S3fERcx7WjJX3I"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Supervisor"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RZC3BTUvxiiVSX0btt8jxZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RZC3BTUvxiiVSX0btt8jxZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RZC3BTUvxiiVSX0btt8jxZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RcGdhNTrFdv7wPADWNZbxu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RcGdhNTrFdv7wPADWNZbxu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RjnuFER5dg9Srme7cp3rMb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RjnuFER5dg9Srme7cp3rMb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Janitor"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chef"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#Afghani_Paneer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Starter"/>
+        <NamedIndividual IRI="#Afghani_Paneer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#Dragon_Rolls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Starter"/>
+        <NamedIndividual IRI="#Dragon_Rolls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Table"/>
+        <NamedIndividual IRI="#Table1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Table"/>
+        <NamedIndividual IRI="#Table2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Table"/>
+        <NamedIndividual IRI="#Table3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#counter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BillCounter"/>
+        <NamedIndividual IRI="#counter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#da1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DiningArea"/>
+        <NamedIndividual IRI="#da1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#da2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DiningArea"/>
+        <NamedIndividual IRI="#da2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#da3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DiningArea"/>
+        <NamedIndividual IRI="#da3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#kitchen1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kitchen"/>
+        <NamedIndividual IRI="#kitchen1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#kitchen2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kitchen"/>
+        <NamedIndividual IRI="#kitchen2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MenuCard"/>
+        <NamedIndividual IRI="#m1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Order"/>
+        <NamedIndividual IRI="#o1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Order"/>
+        <NamedIndividual IRI="#o2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#r1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestRoom"/>
+        <NamedIndividual IRI="#r1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Area"/>
+        <NamedIndividual IRI="#r2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestRoom"/>
+        <NamedIndividual IRI="#r2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8as2YjLbV2ErhuIpKqkZE8"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#books"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cNMrkLB19P83lVjnP87FK"/>
+        <NamedIndividual IRI="#Table2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orders"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cNMrkLB19P83lVjnP87FK"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfOLEyxKKQoMTcHj50EQVZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFor"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cNMrkLB19P83lVjnP87FK"/>
+        <NamedIndividual IRI="#o2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7c8APBgzF138xHeaeJ2cTX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfOLEyxKKQoMTcHj50EQVZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#takes"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+        <NamedIndividual IRI="#o1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#takes"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+        <NamedIndividual IRI="#o2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBluARXtwaKipCaNl10cH2H"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#collectsPaymentFrom"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cNMrkLB19P83lVjnP87FK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#collectsPaymentFrom"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx8U1b21oCaIrxpKrh7r8B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#books"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx8U1b21oCaIrxpKrh7r8B"/>
+        <NamedIndividual IRI="#Table1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orders"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx8U1b21oCaIrxpKrh7r8B"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7c8APBgzF138xHeaeJ2cTX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFor"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx8U1b21oCaIrxpKrh7r8B"/>
+        <NamedIndividual IRI="#o1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cleans"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+        <NamedIndividual IRI="#Table1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cleans"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+        <NamedIndividual IRI="#Table2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cleans"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+        <NamedIndividual IRI="#Table3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supports"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supports"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assists"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cNMrkLB19P83lVjnP87FK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assists"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx8U1b21oCaIrxpKrh7r8B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overseesActivity"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overseesActivity"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overseesActivity"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overseesActivity"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overseesActivity"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overseesActivity"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#manages"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RZC3BTUvxiiVSX0btt8jxZ"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RZC3BTUvxiiVSX0btt8jxZ"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#visits"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RjnuFER5dg9Srme7cp3rMb"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maintainsCleanlinessAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maintainsSafetyAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooks"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7c8APBgzF138xHeaeJ2cTX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooks"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9CdLjT4WupOMwqefopvHq9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooks"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9fpdPf7VMkbkvOTfOyWXm7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooks"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBlcT9rZdhBpkJxhyPL27fj"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooks"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBzUYyDy4hAFmmnHjDaKWXW"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooks"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="#Afghani_Paneer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#plans1"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R0qU7wuEguHugPgLcDEYIT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#plans1"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7c8APBgzF138xHeaeJ2cTX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#plans1"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8u4nrEwUgNgcg9sDXbPMGg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#plans1"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9bZtvgKh2UbIjlSwKxdR7X"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#plans1"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBLsrshjGmfs6js3VCnHIoq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#plans1"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RVVv9mRGsDqdsm7Ioj2k9d"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#plans1"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="#m1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <NamedIndividual IRI="#Radisson"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#orderDetails"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cNMrkLB19P83lVjnP87FK"/>
+        <Literal>Items: Chilled Beer
+Price: 120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+        <Literal>Rs.10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffContactDetails2"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+        <Literal>mob: 9876543210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">108</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+        <Literal>Rs.50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffContactDetails2"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+        <Literal>mob: 9875678761</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">102</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#orderDetails"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBx8U1b21oCaIrxpKrh7r8B"/>
+        <Literal>Items: Biryani
+Price: 150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+        <Literal>Rs. 5000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffContactDetails2"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+        <Literal>mob: 9776546534</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+        <Literal>Rs.5000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffContactDetails2"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+        <Literal>mob: 9856546567</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">107</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+        <Literal>Rs.75000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffContactDetails2"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+        <Literal>mob: 9856546786
+email: riyotsu@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">106</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RZC3BTUvxiiVSX0btt8jxZ"/>
+        <Literal>Rs. 100000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffContactDetails2"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RZC3BTUvxiiVSX0btt8jxZ"/>
+        <Literal>mob: 9856548971
+email: suniyo@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RZC3BTUvxiiVSX0btt8jxZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">105</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+        <Literal>Rs.5000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffContactDetails2"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+        <Literal>mob: 9856546534</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">104</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <Literal>Rs. 45000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffContactDetails2"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <Literal>mob: 9812346534</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Radisson"/>
+        <Literal>164, 165, Avinashi Rd, near Nava India Signal,
+Peelamedu, Masakalipalayam,
+Coimbatore, Tamil Nadu
+641004
+0422 222 6000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#restaurantContactDetails1"/>
+        <NamedIndividual IRI="#Radisson"/>
+        <Literal>ph no: 04222226000
+email: radisson.cmb@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#consistOf"/>
+        <NamedIndividual IRI="#m1"/>
+        <Literal>Beverages:
+Butter Milk
+Chilled Beer
+Coca-Cola
+Pepsi
+Pineapple Milkshake
+Red Bull
+Rose Milkshake
+Sprite
+Thumbs-up
+
+Starter:
+Afghani Paneer
+Dragon Rolls
+
+Main Course:
+Biryani
+Dal Fry
+Dal Makkhani
+Dal Tadka
+Dosa Sambhar
+Fried Rice
+Jeera Rice
+Pav Bhaji
+Rajma
+
+Daily Special:
+Biryani
+Butter Naan
+Chilli Paneer
+Nan
+Noodles
+Pineapple Milkshake
+
+Dessert:
+Butterscotch Ice-cream
+Chocolate Ice-cream
+Gulab Jamun
+Kaju Katli
+Raj Bhog
+Rasagulla
+Rasmalai
+Strawberry Ice-cream
+Vanilla Ice-cream</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assists"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#books"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cleans"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#collectsPaymentFrom"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cooks"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#maintainsCleanlinessAt"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#maintainsSafetyAt"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#manages"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#orders"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#overseesActivity"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#owns"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#paysFor"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#plans1"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#plans2"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#serves"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#supports"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#takes"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#visits"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#worksAt"/>
+        <ObjectProperty IRI="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assists"/>
+        <Class IRI="#Valet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#books"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cleans"/>
+        <Class IRI="#Busboy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#collectsPaymentFrom"/>
+        <Class IRI="#Cashier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cooks"/>
+        <Class IRI="#Chef"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maintainsCleanlinessAt"/>
+        <Class IRI="#Janitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maintainsSafetyAt"/>
+        <Class IRI="#Janitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manages"/>
+        <Class IRI="#Manager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#orders"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#overseesActivity"/>
+        <Class IRI="#Supervisor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#owns"/>
+        <Class IRI="#Restaurateur"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#paysFor"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#plans1"/>
+        <Class IRI="#Chef"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#plans2"/>
+        <Class IRI="#Chef"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#serves"/>
+        <Class IRI="#Waiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supports"/>
+        <Class IRI="#Busboy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#takes"/>
+        <Class IRI="#Waiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#visits"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksAt"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assists"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#books"/>
+        <Class IRI="#Table"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cleans"/>
+        <Class IRI="#Table"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#collectsPaymentFrom"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cooks"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maintainsCleanlinessAt"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maintainsSafetyAt"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manages"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#orders"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#overseesActivity"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#owns"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#paysFor"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#plans1"/>
+        <Class IRI="#DailySpecial"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#plans2"/>
+        <Class IRI="#MenuCard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#serves"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supports"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takes"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#visits"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksAt"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#restaurantContactDetails1"/>
+        <DataProperty IRI="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#address"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#consistOf"/>
+        <Class IRI="#MenuCard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#orderDetails"/>
+        <Class IRI="#Order"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#restaurantContactDetails1"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#salary"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#staffContactDetails2"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#staffID"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#consistOf"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#orderDetails"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#restaurantContactDetails1"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#salary"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#staffContactDetails2"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#staffID"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R0qU7wuEguHugPgLcDEYIT</IRI>
+        <Literal xml:lang="en">Nan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R7Hoj22zihm7N3DX54L0gT</IRI>
+        <Literal xml:lang="en">Butterscotch Ice-cream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R7MDXwYnel55Nw8qXM2tnRJ</IRI>
+        <Literal xml:lang="en">Pav Bhaji</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R7c8APBgzF138xHeaeJ2cTX</IRI>
+        <Literal xml:lang="en">Biryani</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R82UEMDa14TAI696qHwjNM</IRI>
+        <Literal xml:lang="en">Sprite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8as2YjLbV2ErhuIpKqkZE8</IRI>
+        <Literal xml:lang="en">Prayank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8u4nrEwUgNgcg9sDXbPMGg</IRI>
+        <Literal xml:lang="en">Noodles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9BZggPZBmnWBDDaAi7VSYY</IRI>
+        <Literal xml:lang="en">Rasmalai</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9CdLjT4WupOMwqefopvHq9</IRI>
+        <Literal xml:lang="en">Fried Rice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9I16JvEKq3NVs5MWv3ImHU</IRI>
+        <Literal xml:lang="en">Thumbs-up</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9bZtvgKh2UbIjlSwKxdR7X</IRI>
+        <Literal xml:lang="en">Chilli Paneer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9cNMrkLB19P83lVjnP87FK</IRI>
+        <Literal xml:lang="en">Samuel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9fpdPf7VMkbkvOTfOyWXm7</IRI>
+        <Literal xml:lang="en">Dal Makkhani</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9wNaR9im81RAMn7RLFK8F</IRI>
+        <Literal xml:lang="en">Rajma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RB6ej9harSVTmNpTJcVGq7R</IRI>
+        <Literal xml:lang="en">Chotu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBCE2apllWU3NIUoyvNfEt1</IRI>
+        <Literal xml:lang="en">Rasagulla</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBLsrshjGmfs6js3VCnHIoq</IRI>
+        <Literal xml:lang="en">Pineapple Milkshake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBfOLEyxKKQoMTcHj50EQVZ</IRI>
+        <Literal xml:lang="en">Chilled Beer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBhXM6vP9Aunc4nMOZIWtFr</IRI>
+        <Literal xml:lang="en">Strawberry Ice-cream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBlcT9rZdhBpkJxhyPL27fj</IRI>
+        <Literal xml:lang="en">Dal Fry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBluARXtwaKipCaNl10cH2H</IRI>
+        <Literal xml:lang="en">Mayachi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBp9XITNxzMlcfdXABci8kI</IRI>
+        <Literal xml:lang="en">Harshad Mehta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBx6JiEU5eoE4akcyFv4mZB</IRI>
+        <Literal xml:lang="en">Rose Milkshake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBx8U1b21oCaIrxpKrh7r8B</IRI>
+        <Literal xml:lang="en">Mary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBzUYyDy4hAFmmnHjDaKWXW</IRI>
+        <Literal xml:lang="en">Dal Tadka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RC0hMPFsADYWj6Y9m264CE9</IRI>
+        <Literal xml:lang="en">Jeera Rice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RC3UWq9eIygd7YU2ssHYvU3</IRI>
+        <Literal xml:lang="en">Raj Bhog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RCIKgZdEjmZFXsi8q95f7Lo</IRI>
+        <Literal xml:lang="en">Gulab Jamun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RCIL0299ZwlMahlcsHtbX7w</IRI>
+        <Literal xml:lang="en">Kaju Katli</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RCTc3w6hsLLbxvy81N0gQFL</IRI>
+        <Literal xml:lang="en">Vanilla Ice-cream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RCmp2PXj2b7C75PRFThVlKn</IRI>
+        <Literal xml:lang="en">Coca-Cola</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDL0iU5saUxt4ChPVlzoPDw</IRI>
+        <Literal xml:lang="en">Sunny</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDQkuvSMn0rL6522Q1aJ55j</IRI>
+        <Literal xml:lang="en">Red Bull</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDTrQzsHjGeLNDeRBrQBr1V</IRI>
+        <Literal xml:lang="en">Nobita</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RGW4sNYshAAXJPn8BHsQLW</IRI>
+        <Literal xml:lang="en">Dosa Sambhar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RKDmBU3XWCxQPQ3Gmjh1tY</IRI>
+        <Literal xml:lang="en">Chocolate Ice-cream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RVVv9mRGsDqdsm7Ioj2k9d</IRI>
+        <Literal xml:lang="en">Butter Naan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RX6V7u46S3fERcx7WjJX3I</IRI>
+        <Literal xml:lang="en">Butter Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RXwV3HKmHXylVOJFtFgiVw</IRI>
+        <Literal xml:lang="en">Riyotsu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RZC3BTUvxiiVSX0btt8jxZ</IRI>
+        <Literal xml:lang="en">Suniyo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RcGdhNTrFdv7wPADWNZbxu</IRI>
+        <Literal xml:lang="en">Pepsi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RjnuFER5dg9Srme7cp3rMb</IRI>
+        <Literal xml:lang="en">Binod</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RvBaxXTDqSZZKA2uQqzec6</IRI>
+        <Literal xml:lang="en">Mark</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RvfKaP4TaKqHdymTkILEur</IRI>
+        <Literal xml:lang="en">Vikas Gupta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Afghani_Paneer</IRI>
+        <Literal xml:lang="en">Afghani Paneer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Area</IRI>
+        <Literal xml:lang="en">Area inside the restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Area</IRI>
+        <Literal xml:lang="en">Area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Beverage</IRI>
+        <Literal xml:lang="en">Drinks available at the restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Beverage</IRI>
+        <Literal xml:lang="en">Beverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BillCounter</IRI>
+        <Literal xml:lang="en">Area where customers pay the bill.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BillCounter</IRI>
+        <Literal xml:lang="en">Bill Counter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Busboy</IRI>
+        <Literal xml:lang="en">Staff supports other restaurant staff members by cleaning, clearing and setting tables for customers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Busboy</IRI>
+        <Literal xml:lang="en">Busboy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cashier</IRI>
+        <Literal xml:lang="en">Staff who collects the payment from the customers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cashier</IRI>
+        <Literal xml:lang="en">Cashier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chef</IRI>
+        <Literal xml:lang="en">Staff who cooks food, plans menus and daily specials</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chef</IRI>
+        <Literal xml:lang="en">Chef</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Customer</IRI>
+        <Literal xml:lang="en">Person who visits the restaurant, places order, eats and pays for his/her order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Customer</IRI>
+        <Literal xml:lang="en">Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DailySpecial</IRI>
+        <Literal xml:lang="en">The special dish prepared for a day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DailySpecial</IRI>
+        <Literal xml:lang="en">Daily Special</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dessert</IRI>
+        <Literal xml:lang="en">The sweet course eaten at the end of a meal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dessert</IRI>
+        <Literal xml:lang="en">Dessert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DiningArea</IRI>
+        <Literal xml:lang="en">Area where customers dine in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DiningArea</IRI>
+        <Literal xml:lang="en">Dining Area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dragon_Rolls</IRI>
+        <Literal xml:lang="en">Dragon Rolls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Food</IRI>
+        <Literal xml:lang="en">Items available at the restaurant to eat/drink.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Food</IRI>
+        <Literal xml:lang="en">Food</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Janitor</IRI>
+        <Literal xml:lang="en">Janitors maintain the cleanliness and safety of the restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Janitor</IRI>
+        <Literal xml:lang="en">Janitor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Kitchen</IRI>
+        <Literal xml:lang="en">Area where dishes are prepared</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Kitchen</IRI>
+        <Literal xml:lang="en">Kitchen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MainCourse</IRI>
+        <Literal xml:lang="en">Food that is served as the main dish in a multi-course meal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MainCourse</IRI>
+        <Literal xml:lang="en">Main Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Manager</IRI>
+        <Literal xml:lang="en">Staff who is responsible for leading and managing the restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Manager</IRI>
+        <Literal xml:lang="en">Manager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MenuCard</IRI>
+        <Literal xml:lang="en">Contains the food items available for the day.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MenuCard</IRI>
+        <Literal xml:lang="en">Menu Card</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Order</IRI>
+        <Literal xml:lang="en">Customer places an order and the waiter takes orders. It is a combination of food items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Order</IRI>
+        <Literal xml:lang="en">Order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">Represents a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Radisson</IRI>
+        <Literal>Radisson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestRoom</IRI>
+        <Literal xml:lang="en">Wash room area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestRoom</IRI>
+        <Literal xml:lang="en">Rest Room</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Restaurant</IRI>
+        <Literal xml:lang="en">A business that prepares and serves food and drinks to customers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Restaurant</IRI>
+        <Literal xml:lang="en">Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Restaurateur</IRI>
+        <Literal xml:lang="en">Person who owns and runs the restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Restaurateur</IRI>
+        <Literal xml:lang="en">Restaurateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Staff</IRI>
+        <Literal xml:lang="en">Person who works at the restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Staff</IRI>
+        <Literal xml:lang="en">Staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Starter</IRI>
+        <Literal xml:lang="en">Dishes served before the main course of a meal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Starter</IRI>
+        <Literal xml:lang="en">Starter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Supervisor</IRI>
+        <Literal xml:lang="en">Staff who oversees the activities of restaurant staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Supervisor</IRI>
+        <Literal xml:lang="en">Supervisor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Table</IRI>
+        <Literal xml:lang="en">Order specific to a table and have a waiter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Table</IRI>
+        <Literal xml:lang="en">Table</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Table1</IRI>
+        <Literal xml:lang="en">Table1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Table2</IRI>
+        <Literal xml:lang="en">Table2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Table3</IRI>
+        <Literal xml:lang="en">Table3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Valet</IRI>
+        <Literal xml:lang="en">Staff who assists the customers by parking their cars safely</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Valet</IRI>
+        <Literal xml:lang="en">Valet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Waiter</IRI>
+        <Literal xml:lang="en">Staff who takes orders and serves food</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Waiter</IRI>
+        <Literal xml:lang="en">Waiter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#address</IRI>
+        <Literal xml:lang="en">to store the address of the restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#address</IRI>
+        <Literal xml:lang="en">address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#assists</IRI>
+        <Literal xml:lang="en">assists</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#books</IRI>
+        <Literal xml:lang="en">books</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cleans</IRI>
+        <Literal xml:lang="en">cleans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#collectsPaymentFrom</IRI>
+        <Literal xml:lang="en">collectsPaymentFrom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#consistOf</IRI>
+        <Literal xml:lang="en">to indicate the food items present at the restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#consistOf</IRI>
+        <Literal xml:lang="en">consistsOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cooks</IRI>
+        <Literal xml:lang="en">cooks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#counter</IRI>
+        <Literal xml:lang="en">counter1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#da1</IRI>
+        <Literal xml:lang="en">da1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#da2</IRI>
+        <Literal xml:lang="en">da2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#da3</IRI>
+        <Literal xml:lang="en">da3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kitchen1</IRI>
+        <Literal xml:lang="en">For preparing vegetarian dishes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#kitchen1</IRI>
+        <Literal xml:lang="en">kitchen1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kitchen2</IRI>
+        <Literal xml:lang="en">For preparing non-vegetarian dishes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#kitchen2</IRI>
+        <Literal xml:lang="en">kitchen2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#m1</IRI>
+        <Literal xml:lang="en">m1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintainsCleanlinessAt</IRI>
+        <Literal xml:lang="en">maintainsCleanlinessAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintainsSafetyAt</IRI>
+        <Literal xml:lang="en">maintainsSafetyAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#manages</IRI>
+        <Literal xml:lang="en">manages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#o1</IRI>
+        <Literal xml:lang="en">o1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#o2</IRI>
+        <Literal xml:lang="en">o2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#orderDetails</IRI>
+        <Literal xml:lang="en">contains the details of each order (items that the customer ordered)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#orderDetails</IRI>
+        <Literal xml:lang="en">orderDetails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#orders</IRI>
+        <Literal xml:lang="en">orders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#overseesActivity</IRI>
+        <Literal xml:lang="en">overseesActivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#owns</IRI>
+        <Literal xml:lang="en">owns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#paysFor</IRI>
+        <Literal xml:lang="en">paysFor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#plans1</IRI>
+        <Literal xml:lang="en">plans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#plans2</IRI>
+        <Literal xml:lang="en">plans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#r1</IRI>
+        <Literal xml:lang="en">Rest room for male</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#r1</IRI>
+        <Literal xml:lang="en">RestRoom1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#r2</IRI>
+        <Literal xml:lang="en">Rest room for female</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#r2</IRI>
+        <Literal xml:lang="en">RestRoom2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#restaurantContactDetails1</IRI>
+        <Literal xml:lang="en">contact details of the customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#restaurantContactDetails1</IRI>
+        <Literal xml:lang="en">contactDetails1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#salary</IRI>
+        <Literal xml:lang="en">monthly salary of a staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#salary</IRI>
+        <Literal xml:lang="en">salary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#serves</IRI>
+        <Literal xml:lang="en">serves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#staffContactDetails2</IRI>
+        <Literal xml:lang="en">contact details of the staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#staffContactDetails2</IRI>
+        <Literal xml:lang="en">contactDetails2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#staffID</IRI>
+        <Literal xml:lang="en">to uniquely identify each staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#staffID</IRI>
+        <Literal xml:lang="en">staffID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#supports</IRI>
+        <Literal xml:lang="en">supports</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#takes</IRI>
+        <Literal xml:lang="en">takes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#visits</IRI>
+        <Literal xml:lang="en">visits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#worksAt</IRI>
+        <Literal xml:lang="en">worksAt</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

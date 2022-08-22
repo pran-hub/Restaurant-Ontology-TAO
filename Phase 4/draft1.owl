@@ -1,0 +1,2330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:RestaurantOnto="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8e9b3bda08e54e149caf8d7db3d49005">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nee16457ac72b4337901ac921c414b665"/>
+    <rdfs:comment xml:lang="en">Area used by chef to cook food.</rdfs:comment>
+    <rdfs:label xml:lang="en">Kitchen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Pradip_Kumar">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100015"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100028"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100034"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S021</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pradip Kumar</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100016">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Strawberry_Shake"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Paneer"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_Tikka_Masala"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_Biryani"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Milk"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hot_Chocolate"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 23 March 2022 | Amount = 750 | Items = I101 I109 I112 I123 I124 I125</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdfs:comment>It is primitive concept which is purchased by the customer to avail special facilities from the restaurant.</rdfs:comment>
+    <rdfs:label>Subscription</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa15f75748db45fab70d36a7f6355637">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdf:rest rdf:nodeID="Nd49b1ff6486e4adfb8d636dea830e280"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supplier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Nf0bbab4031c446ad8f67a99b762f62ce"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdfs:comment>Person who supplies raw materials to run the restaurant.</rdfs:comment>
+    <rdfs:label>Supplier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Shridhar_Gupta">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100011"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S017</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shridhar Gupta</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N85d1643ed290425fa3e3e22eb86dd7dc">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#India"/>
+    <rdf:rest rdf:nodeID="N046069b0e3e848118503ef4cba302136"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100003">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gobi_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gulab_Jamun"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Thumps_Up"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 20 March 2022 | Amount = 100 | Items = I107 I117 I120</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100015">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gulab_Jamun"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Milk"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_65"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 22 March 2022 | Amount = 148 | Items = I102 I117 I124</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#table1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfedf708c901b45718c54b76059892430">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2da62feec9704f6ba3705c9e18954fc4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6604c11df49f44f0a7e0966bcd6af1b9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#India"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Ne32c02a418e0492dae77c332413782f5"/>
+    <rdfs:comment>It contains food or beverages planned by the Chef.</rdfs:comment>
+    <rdfs:label>MenuCard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2f9c1434a11f4d73a73fa80521af815d">
+    <rdf:first rdf:nodeID="N8126097fa748459ea1ac18eb92538979"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#duration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3ff09e03028f48dd97c6f22ac7fc4de7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Ne0b15e099c4542789f2509b8201f5935"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb24c6bbb21ee41febf1570b704524f8f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N9b4bdb905fc842aebaa598964b723ef2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf8132f27e3534cbfa038400e13f0f915">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Expenditure"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#orderDetails">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">contains the details of each order (items that the customer ordered)</rdfs:comment>
+    <rdfs:label xml:lang="en">orderDetails</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne32c02a418e0492dae77c332413782f5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N68993db2d52a4c78957fa4d6c5aa27d7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partyHall">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PartyHall"/>
+    <RestaurantOnto:bookedBy rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Nf3ee0dffb8a045a48f9ed76ce87c3317"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdfs:comment xml:lang="en">Staff who cooks food.</rdfs:comment>
+    <rdfs:label xml:lang="en">Chef</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N14d3dd85c33d4c09a72a36573c32a1e8">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:rest rdf:nodeID="N65ca36d5755c47d78ce90be07bfdd4b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Ne03d8e68742a430d8223f0c2f811f99b"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdfs:comment xml:lang="en">Staff who manages a restaurant and staff of the restaurant.</rdfs:comment>
+    <rdfs:label xml:lang="en">Manager</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Biryani">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdfs:comment xml:lang="en">It is a primitive concept representing realworld entity food.</rdfs:comment>
+    <rdfs:label xml:lang="en">Food</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9894c3e1db674ba48a5a11954bf8107d">
+    <rdf:first rdf:nodeID="N803a2a89e9b54c0b903b50e10c9388df"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cooks">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+    <rdfs:range rdf:nodeID="N06270805a5374c49bb69377ea2e725e6"/>
+    <rdfs:label xml:lang="en">cooks</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf8b5b80585714072ad837c0e60e82d47">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nedf54e81ea44406fb6b4ebf355367e47"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6627ae156deb499bb649b0a3c79f2bfe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ajay_Rathod">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100008"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100035"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S019</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ajay Rathod</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#IndianDish">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N4f4fec1c472745429f9f92c6f273ae4d"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdfs:comment>Dish which is originated from India.</rdfs:comment>
+    <rdfs:label>IndianDish</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Rahul_Sharma">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100002"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100033"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S012</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rahul Sharma</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ItalianDish">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Nb0a8c9219dac4691bd17baa38fd7d4d4"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdfs:comment>Dish which is originated from Italy.</rdfs:comment>
+    <rdfs:label>ItalianDish</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6f50360a265248d197cd8a4444e878b4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dessert"/>
+    <rdf:rest rdf:nodeID="Nf196c0ce2c8f4422af50a07bd88a2258"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Pradip_Patil">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100016"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100027"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S022</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pradip Patil</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manoj_Kumar">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100009"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100012"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S016</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manoj Kumar</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dessert">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nb835fd15fe9a431391ced5f833185268"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MainCourse"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter"/>
+    <rdfs:comment>It is a Dish served at the end and is part of MenuCard.</rdfs:comment>
+    <rdfs:label>Dessert</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hot_Chocolate">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e338022f5d349fe8450eeaa070e6403">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+    <rdf:rest rdf:nodeID="Ne89296e88e23447d8db170d62f63914b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb44c981906cd4d7696356f000b81f462">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nfab1d0dcafaf48c78bf12c2e3c45f04d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N0ec9e0eebea34f699789ce57e4767bb6"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdfs:comment xml:lang="en">Staff who maintains cleanliness at Restaurant.</rdfs:comment>
+    <rdfs:label xml:lang="en">Janitor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100017">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_Biryani"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Thumps_Up"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Potato"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hot_Chocolate"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 23 March 2022 | Amount = 468 | Items = I105 I109 I120 I123</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">It is a primitive concept representing a restaurant table used by customers to eat food.</rdfs:comment>
+    <rdfs:label xml:lang="en">Table</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bookedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#books"/>
+    <rdfs:domain rdf:nodeID="N14f41f64780947adb47be1159f4fef57"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100028">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kadhai_Paneer"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Butter_Paneer_Masala"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 25 March 2022 | Amount = 100 | Items = I113 I114</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100010">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_Biryani"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_65"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 21 March 2022 | Amount = 110 | Items = I102 I109</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N68993db2d52a4c78957fa4d6c5aa27d7">
+    <rdf:first rdf:nodeID="N5c96a3327fae45c689dcb7971e2ddcc3"/>
+    <rdf:rest rdf:nodeID="N078e9ef572124c99a691f0ce04b4f64f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100029">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kashmiri_Pulav"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ice_Cream"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Veg_Lollipop"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 25 March 2022 | Amount = 115 | Items = I115 I104 I118</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N21103c08c6ce4300b4a22d8e4786033f">
+    <rdf:first rdf:nodeID="N6b98f766436045feba6a4ddddbc91c74"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3149bb637ba641b8bd351c3bb1ebf2c6">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor"/>
+    <rdf:rest rdf:nodeID="N88dd342172c24234b7971f8235bf7e4d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N82e46bb4e2554420b4ed3dc46d16fad5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen"/>
+    <rdf:rest rdf:nodeID="N6d655df4ccbd495690b560b921ca759a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b527fdfcf4a46b48d0e9f0b51772164">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#manages"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100027">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kashmiri_Pulav"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ras_Malai"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chocolate_Shake"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hot_Chocolate"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 25 March 2022 | Amount = 425 | Items = I115 I119 I122 I123</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#VegFood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdfs:comment>It is a food that comes mostly from plants.</rdfs:comment>
+    <rdfs:label>VegFood</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100019">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kashmiri_Pulav"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ice_Cream"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Veg_Lollipop"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hot_Chocolate"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 23 March 2022 | Amount = 250 | Items = I115 I104 I123 I118</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb8ecc261c8204a3dab2482eb5ddf0df5">
+    <rdf:first rdf:nodeID="N3ad5f80e1fcc430f941aeadba2030b15"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b0158f07c6a4e11aa17add899d0506f">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdf:rest rdf:nodeID="N57103fcf99c841648d72cbf45854e8f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N82eee62f534041359f32f064ef8d7a97">
+    <rdf:first rdf:nodeID="N7ae86c4eba76436cb48d60ffcf34fe9d"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Brownie">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Akash_Patil">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100019"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100024"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S025</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akash Patil</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#assists">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdfs:label xml:lang="en">assists</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N236a280949d94669b5794d4f3a64538e"/>
+    <rdfs:comment>It is prepared for exactly one order and contains exactly one Amount.</rdfs:comment>
+    <rdfs:label>Bill</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6d200a60968446beb8f45f8a54abe6d9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#collectsPaymentFrom"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N75f527eeeb3343ddb81bc735515111a4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+    <rdf:rest rdf:nodeID="N1ed8b0cc73dd4f83875c6301cf6e20ec"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N45c39618ecb64db69b80c02e23964087">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#uses"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BillingCounter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#salary">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N5aae6bd959f2422abf3cc10b7b0d987a"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdfs:comment xml:lang="en">Person who visits the restaurant, places order, eats and pays for his/her order</rdfs:comment>
+    <rdfs:label xml:lang="en">Customer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#quarterlySubscription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9217a0a04f344cb49752e695bde863e1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysFor"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Expenditure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="N9af6a82f1701452bbaa901fe5897f4a1"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kashmiri_Biryani">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Shridhar_Chaudhari">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100017"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100026"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S023</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shridhar Chaudhari</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RestRoom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N3dad8d9798914cc2b9b3f0f73db15141"/>
+    <rdfs:comment>Area used by any person to rest.</rdfs:comment>
+    <rdfs:label>RestRoom</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf196c0ce2c8f4422af50a07bd88a2258">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:rest rdf:nodeID="Nb22531709b8e482e9085dbb4c9fb648c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9dfc1b3e8dff45ff9842f3b0936966e0">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MexicanDish"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69cd40efa83a4b249ba511bbfd316785">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:rest rdf:nodeID="Nfd3099ac618b4faeb1bad70d89a49ab0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6093bc46561e40d4ad69e70c35f6494d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MainCourse"/>
+    <rdf:rest rdf:nodeID="N01e4d97d54bc438fb77f96dda1787964"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PartyHall">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N0ea5df7c453249e9a33288bfb52caafc"/>
+    <rdfs:comment>Area used by and booked by the customer to throw the parties.</rdfs:comment>
+    <rdfs:label>PartyHall</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#manages">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager"/>
+    <rdfs:range rdf:nodeID="Ncaa51b8896824e26b8e48132e7979a73"/>
+    <rdfs:label xml:lang="en">manages</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf79a100c08164208bf08b7ebe4a24174">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nd74a523167d94559a14c697f985dc904"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na7d022a86d474204b2eab31336d6bf81">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nfd4ad9f9ceeb4b2ebacc5ef0ed6535b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100013">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Veg_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Milk"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hot_Chocolate"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 22 March 2022 | Amount = 679 | Items = I103 I106 I123 I124 I124</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Milk">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0792baedb3c240afa336a284e3832e87">
+    <rdf:first rdf:nodeID="N7aa61cc9855242c18dc64c051204f8f8"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N36fdb0060be24a72b0101a270b35e1ef"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdfs:comment xml:lang="en">Staff who generates bill and collects payment of the order from the customer.</rdfs:comment>
+    <rdfs:label xml:lang="en">Cashier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nae41129f8c874713a0e9a1b17a2d457c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+    <rdf:rest rdf:nodeID="Nbb4b632af2ae4316a926b35cb81629ac"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Shridhar_Tambe">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100004"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100005"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S014</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shridhar Tambe</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdfs:comment xml:lang="en">It is primitive type which represents different places in the restaurant.</rdfs:comment>
+    <rdfs:label xml:lang="en">Area</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ned7181fbcedc4f1e8ee64235420ea433">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N1b0158f07c6a4e11aa17add899d0506f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2a77753e2e16401198b2a4b28a7ebcad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysTo"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100011">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hydrabadi_Biryani"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gobi_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Potato"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 22 March 2022 | Amount = 260 | Items = I105 I106 I107 I108</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plans">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100012">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dal_Khichadi"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chocolate_Shake"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_65"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 22 March 2022 | Amount = 650 | Items = I102 I102 I106 I116 I116 I122</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100009">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kashmiri_Pulav"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ice_Cream"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kadhai_Paneer"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Thumps_Up"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 21 March 2022 | Amount = 386 | Items = I115 I114 I120 I118</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N236a280949d94669b5794d4f3a64538e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N7e58a430d4834a2f9344e32ba5ed6542"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N567d0d7a27924ade94b1f64493bf4b52">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+    <rdf:rest rdf:nodeID="Na6b571d03b6c41868c25d50cdd623633"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6cb7a585c3c749df853ff8350505ade6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysFor"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_Tikka_Masala">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05669d837c7044c29fcf4e012e938e36">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdf:rest rdf:nodeID="N197b2dbb02504011aacb8d7fe9cc6b4a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na43c8a8f2f2844d0b5ec24b399323f4d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N0eab071ea0c34822973d7ed98138749d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">It is a primitive concept representing a restaurant that prepares and serves food and drinks to customers.</rdfs:comment>
+    <rdfs:label xml:lang="en">Restaurant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dal_Khichadi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70addc9777724006b05d199304c2493f">
+    <rdf:first rdf:nodeID="N2a77753e2e16401198b2a4b28a7ebcad"/>
+    <rdf:rest rdf:nodeID="N18b4831836894b16a1e1a7d12889180d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neef173b43c6442eca92a02dd90940a0e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plans"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MainCourse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nf20b8080c86343a0a544a42d0908ee93"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter"/>
+    <rdfs:comment>It is the main Dish and is part of MenuCard.</rdfs:comment>
+    <rdfs:label>MainCourse</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N60845c56ee5e481180854bf514232b99">
+    <rdf:first rdf:nodeID="N88f91d8366d0429aa9cb4e32c9fbb76b"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N98867663118f4049ba715ea40ab1dbfe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:complementOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ReservedTable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ras_Malai">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4c9f46e0796404e92f59be11c10af10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#manages"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#staffContactDetails2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">contact details of the staff</rdfs:comment>
+    <rdfs:label xml:lang="en">contactDetails2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#assist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100007">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kashmiri_Pulav"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ice_Cream"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ras_Malai"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Thumps_Up"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 21 March 2022 | Amount = 460 | Items = I115 I119 I120 I118</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurateur">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Nb44c981906cd4d7696356f000b81f462"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdfs:comment xml:lang="en">Person who owns a restaurant and pays for expenditure.</rdfs:comment>
+    <rdfs:label xml:lang="en">Restaurateur</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#restaurantContactDetails1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">contact details of the customer</rdfs:comment>
+    <rdfs:label xml:lang="en">contactDetails1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9405a9f5a5504cc0aed3f5d7721907ee">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Pratik_Tiwari">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100014"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100029"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100031"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S020</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pratik Tiwari</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Potato">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf"/>
+    <rdfs:domain rdf:nodeID="N8a7da16d13a2403799e5a7dbbbf336da"/>
+    <rdfs:range rdf:nodeID="N7ea51292d4ce4b6baff96e208d81ce86"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#preparedFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb26157646aa49b881e900999966e4d5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#o1Amount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+    <RestaurantOnto:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</RestaurantOnto:cost>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100014">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Paneer"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_65"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 22 March 2022 | Amount = 159 | Items = I101 I102 I106</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5a99aba8ddeb4998a54d176cc2f97920">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdf:rest rdf:nodeID="Nd0160769ca294486b785a21c4bae3951"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Jayesh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <RestaurantOnto:serves rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C1"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1"/>
+    <RestaurantOnto:name>jayesh123</RestaurantOnto:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N371fa3ba7e7945b68b717727be311fba">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+    <rdf:rest rdf:nodeID="Nfedf708c901b45718c54b76059892430"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100022">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dal_Khichadi"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_65"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hydrabadi_Biryani"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hot_Chocolate"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 24 March 2022 | Amount = 821 | Items = I102 I102 I106 I108 I116 I123</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100026">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Strawberry_Shake"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ras_Malai"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_65"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Potato"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Milk"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hot_Chocolate"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 25 March 2022 | Amount = 560 | Items = I102 I105 I119 I123 I124 I125</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#serves">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N06270805a5374c49bb69377ea2e725e6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N192fc2c0e6e44d8bbdf6eb9690e44de6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5c96a3327fae45c689dcb7971e2ddcc3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N444de7e0d7154b589c0bf2593a3c0356">
+    <rdf:first rdf:nodeID="N6627ae156deb499bb649b0a3c79f2bfe"/>
+    <rdf:rest rdf:nodeID="N8331b1ae89984208b04fb83351d38a0f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gobi_Manchurian">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <RestaurantOnto:pays rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#o1Amount"/>
+    <RestaurantOnto:paysFor rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1"/>
+    <RestaurantOnto:places rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1"/>
+    <RestaurantOnto:visits rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Resto1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#chef1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+    <RestaurantOnto:cooks rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#samosa"/>
+    <RestaurantOnto:cooks rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#tea"/>
+    <RestaurantOnto:id>ch1</RestaurantOnto:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naefb550f61de49868d307e4796e79c9a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#China"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2eb0473f677346d799a48a5049e1bb4f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N567d0d7a27924ade94b1f64493bf4b52"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34eb6c512d8649e18eb7f1846a01137f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N9052124f68ae49a58090c72dc663bfe5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8a71fcbdfc364fb6a581f14c86583f22">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Neecd9bd1206744ae8a86b7e046f179d4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3ad5f80e1fcc430f941aeadba2030b15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb0b8916d2e8c4a51bf09a571921fc3f5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N4b5feddd03a744a9861f8a2efd05cc26"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N35555669da9e4da5b5fa96790e26a3b2">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+    <rdf:rest rdf:nodeID="Nb8ecc261c8204a3dab2482eb5ddf0df5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ajay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PrimeCustomer"/>
+    <RestaurantOnto:paysFor rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#quarterlySubscription"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N67dd777b57494f77804309286e01cdd1">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdf:rest rdf:nodeID="N977b4a1de2394ac7a1d6f70024a088a0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2c93d337e93e483da3ada2e9c6255178">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdf:rest rdf:nodeID="N4c61e00ea9ba4d36b895dde082239e4a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd1ed38f82533413ca2fe090944780415">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdf:rest rdf:nodeID="N5740d153879d4e178216991c36c7915d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6cea7e23bd6a4e1db4cea4054cbb3486">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BillingCounter"/>
+    <rdf:rest rdf:nodeID="N82e46bb4e2554420b4ed3dc46d16fad5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Essentials needed to run a restaurant.</rdfs:comment>
+    <rdfs:label>RawMaterial</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N88dd342172c24234b7971f8235bf7e4d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supervisor"/>
+    <rdf:rest rdf:nodeID="N9610ab628c2a4f40ae51840d9baa7e09"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc745dfced2b64195a2cad8d1c86a1772">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#StorageArea"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Thumps_Up">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne5894c573ec14e89ab19fa21853c2d60">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf"/>
+    <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#maintainsCleanlinessAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Janitor"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#managesActively">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#manages"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supervisor"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bill1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#o1Amount"/>
+    <RestaurantOnto:preparedFor rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#India">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>India</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N435297727c724bcab5655117de03d24e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N2c93d337e93e483da3ada2e9c6255178"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca60e72bb3504989a5760d33196c752f">
+    <rdf:first rdf:nodeID="N9217a0a04f344cb49752e695bde863e1"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N43289026e5364cbfb989d0ee433cb8ba"/>
+    <rdfs:range rdf:nodeID="N8a27b530d576440c8f9f02f1b63c8835"/>
+    <rdfs:label xml:lang="en">paysFor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne3b691a437cf425b95ed7b189ecacd81">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ItalianDish"/>
+    <rdf:rest rdf:nodeID="N9dfc1b3e8dff45ff9842f3b0936966e0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_Biryani">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ramesh_Dev">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100003"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S013</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ramesh Dev</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#visits">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+    <rdfs:label xml:lang="en">visits</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100008">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_65"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_Tikka_Masala"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 21 March 2022 | Amount = 160 | Items = I112 I102</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb0a8c9219dac4691bd17baa38fd7d4d4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N751e8a821ceb4e7891a25c8f25a2e76d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad57f04226964482896ddc15c0372e6f">
+    <rdf:first rdf:nodeID="N62c07f38069448cda0f95693ce31cdd8"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N34eb6c512d8649e18eb7f1846a01137f"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdfs:comment xml:lang="en">Staff who takes orders and serves customer.</rdfs:comment>
+    <rdfs:label xml:lang="en">Waiter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#worksAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#DiscountableOrder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Na43c8a8f2f2844d0b5ec24b399323f4d"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdfs:comment>It is order which contains more than 10 foods or beverages.</rdfs:comment>
+    <rdfs:label>DiscountableOrder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#collectsPaymentFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysTo"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdfs:label xml:lang="en">collectsPaymentFrom</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#places">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>It is primitive concept representing amount
+money in rupees</rdfs:comment>
+    <rdfs:label>Amount</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100024">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dal_Khichadi"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Paneer"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_Tikka_Masala"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 24 March 2022 | Amount = 289 | Items = I101 I112 I116</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb6b3208dc0a34d72afc5b22a1b38f7e1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#owns"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb22531709b8e482e9085dbb4c9fb648c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MainCourse"/>
+    <rdf:rest rdf:nodeID="Na874b3accadf463da0da692ce118cf9a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6c9b03b970344cae8982a8461ac3a5f5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysFor"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N66703230d7194ad3970528d97ae1d952">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N033b02b70be648b1a2bc95f19ba95907">
+    <rdf:first rdf:nodeID="Nd43a57c2d832423db89a810a990c55b8"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100002">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gobi_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Butter_Paneer_Masala"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 20 March 2022 | Amount = 153 | Items = I113 I107 I106</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3343e7e59181413c857acd74b94731ee">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:rest rdf:nodeID="N6093bc46561e40d4ad69e70c35f6494d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N655b15b61fa84b8fa4a3cf3378628e80">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plannedBy"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd74a523167d94559a14c697f985dc904">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+    <rdf:rest rdf:nodeID="Na4889553583f4b80af41a848d99796db"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9a9258e485e544df8766a2cbaff0ee69">
+    <rdf:first rdf:nodeID="N79c92f95d1b949b69e56e068b0655733"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdfs:comment>It is a primitive concept representing anything that can be drunk.</rdfs:comment>
+    <rdfs:label>Beverage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncaa51b8896824e26b8e48132e7979a73">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N0c52492fa0da4fd99f1d61648a4dcd10"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N64f3419b444049e2b83a1eee44f1d025">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N2b680a20790944609ab107bdc72629e5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N803a2a89e9b54c0b903b50e10c9388df">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Mexico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Veg_Manchurian">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6be9724bb58940e29600352a3fad064a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdf:rest rdf:nodeID="N82eee62f534041359f32f064ef8d7a97"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N751e8a821ceb4e7891a25c8f25a2e76d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdf:rest rdf:nodeID="N9a9258e485e544df8766a2cbaff0ee69"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100030">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hydrabadi_Biryani"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ras_Malai"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 25 March 2022 | Amount = 95 | Items = I108 I119</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4f4fec1c472745429f9f92c6f273ae4d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N5a99aba8ddeb4998a54d176cc2f97920"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#price">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#staffID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <rdfs:comment xml:lang="en">to uniquely identify each staff</rdfs:comment>
+    <rdfs:label xml:lang="en">staffID</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb4b632af2ae4316a926b35cb81629ac">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdf:rest rdf:nodeID="N1e5976aee7234bcb9e7c97a9855bb86f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N403c740480744ef18c46bc9298768b33">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BusyWaiter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Neb7c3f8d047d4ca9af0586852523daa8"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdfs:comment>Waiter who serves more than 5 customers.</rdfs:comment>
+    <rdfs:label>BusyWaiter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N18b4831836894b16a1e1a7d12889180d">
+    <rdf:first rdf:nodeID="N12a8ff1b00c14c61a20fc4863b977e1d"/>
+    <rdf:rest rdf:nodeID="N21103c08c6ce4300b4a22d8e4786033f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne62243ed44124a1bb711998cbc9cfd29">
+    <rdf:first rdf:nodeID="N0e147ca67feb4fb989baad95652b9a95"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#O1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#tea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57d8408edf8a47c2930d29802ab10acf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N14d3dd85c33d4c09a72a36573c32a1e8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36fdb0060be24a72b0101a270b35e1ef">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Ncfff6e325a514ed98d06907702f153b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100034">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gobi_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kadhai_Paneer"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Thumps_Up"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 29 March 2022 | Amount = 175 | Items = I120 I107 I114</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec797b06e11542ceaaa4d3ce14609062">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+    <rdf:rest rdf:nodeID="N5ecf5b4495304a89b11264b9aea652cd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbdffb920d623464fbf3203b2ed6eb67a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nea3a0a92ed0a4ce892c2862faf304075"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100006">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Paneer"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_Tikka_Masala"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 21 March 2022 | Amount = 190 | Items = I112 I101 I106</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na0ecdb8702a94056bb608f57ce1dd989">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdf:rest rdf:nodeID="N36d9ed2761894deeb3f664119ef340f8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0bbab4031c446ad8f67a99b762f62ce">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N5b3f2b3181454da787bff1a81cf40f30"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57103fcf99c841648d72cbf45854e8f3">
+    <rdf:first rdf:nodeID="Naefb550f61de49868d307e4796e79c9a"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N59de2bf5807f48a694a84681d898efb2">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdf:rest rdf:nodeID="Nde26fbbe66b64160827b75309c10b678"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N046069b0e3e848118503ef4cba302136">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Italy"/>
+    <rdf:rest rdf:nodeID="Nf978c8ccf16449c18343c46ca310972e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MexicanDish">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N64f3419b444049e2b83a1eee44f1d025"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdfs:comment>Dish which is originated from Mexico</rdfs:comment>
+    <rdfs:label>MexicanDish</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#orders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdfs:label xml:lang="en">orders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kuldeep_Tambe">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100018"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100025"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S024</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kuldeep Tambe</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18500</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100004">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chocolate_Shake"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Butter_Paneer_Masala"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 20 March 2022 | Amount = 341 | Items = I113 I122 I106</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndbbdcb6df8dd4c858474d443adb17804">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N1b65c3afa1a24866897d79586ac01111"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c3917eefc78493a82e6a053814b65f2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#uses"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b65c3afa1a24866897d79586ac01111">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+    <rdf:rest rdf:nodeID="Nf8132f27e3534cbfa038400e13f0f915"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N454e960e299340cf9b6baf8b0f13c183">
+    <rdf:first rdf:nodeID="N45c39618ecb64db69b80c02e23964087"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100031">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gobi_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Biryani"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Veg_Lollipop"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 26 March 2022 | Amount = 160 | Items = I110 I107 I104</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#pays">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100005">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Veg_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ras_Malai"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Paneer"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 21 March 2022 | Amount = 286 | Items = I103 I119 I101</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9d8b8e30c5604ac5a3d1527d04bf39fb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N603f0f15ac9e4c29a4e448cc59450e61"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N148c2404481c44f0a9c9343f2ddb756f">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BillingCounter"/>
+    <rdf:rest rdf:nodeID="N99d21b1f9bbe455d9bf83bc36ac814a0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Pravin_Tambe">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100006"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100007"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S015</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pravin Tambe</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7d0e2ccb1f14e8bbab42c1ed5482190">
+    <rdf:first rdf:nodeID="N6c9b03b970344cae8982a8461ac3a5f5"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#generates">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1e5976aee7234bcb9e7c97a9855bb86f">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+    <rdf:rest rdf:nodeID="N01c4a3aa9fb143cab2ed5d94305b20a5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#BillingCounter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N86068df01af042aa9779d8d27f5f6d43"/>
+    <rdfs:comment>Area used by cashier to collect payments.</rdfs:comment>
+    <rdfs:label>BillingCounter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf3ee0dffb8a045a48f9ed76ce87c3317">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N59de2bf5807f48a694a84681d898efb2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec4ccffedb404c5994d6fb5c37c161d8">
+    <rdf:first rdf:nodeID="N6d200a60968446beb8f45f8a54abe6d9"/>
+    <rdf:rest rdf:nodeID="N96d7a0d65fdb495f961263cb14aa8a0b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1595f5f3678c464ab415014981e826bc">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+    <rdf:rest rdf:nodeID="Ndc1190296c384819bc3fa3c74d43a5b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9af6a82f1701452bbaa901fe5897f4a1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N83c96a83268a491796cb7f7e24161a88"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb1a86f00de9d4f5a82064a72518b8524">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+    <rdf:rest rdf:nodeID="N371fa3ba7e7945b68b717727be311fba"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100023">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hydrabadi_Biryani"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Milk"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hot_Chocolate"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 24 March 2022 | Amount = 305 | Items = I108 I108 I123 I124</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manoj_Tambe">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100010"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100013"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S018</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manoj Tambe</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Tushar_kamat">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100020"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100023"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S026</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tushar kamat</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0fada8bfd8b840a4a79a5498605bf535">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Expenditure"/>
+    <rdf:rest rdf:nodeID="Nf0abf3a074bb4ce98fc993f86573bb99"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac57b1d6cdb24c7090396fa1048732dd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#maintainsCleanlinessAt"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N01e4d97d54bc438fb77f96dda1787964">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial"/>
+    <rdf:rest rdf:nodeID="N47e3a1ecb6dc413ab20fd30654fe3bb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100025">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ice_Cream"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_65"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 24 March 2022 | Amount = 327 | Items = I102 I118 I118</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ec75f99cd72420abf86128cea64528a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#reservedTable1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <RestaurantOnto:bookedBy rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54bf679d4e304904b974b7141f1877c2">
+    <rdf:first rdf:nodeID="Nb6b3208dc0a34d72afc5b22a1b38f7e1"/>
+    <rdf:rest rdf:nodeID="Nca60e72bb3504989a5760d33196c752f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N61e0ddd89c47437d99754919a719cdc8">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#IndianDish"/>
+    <rdf:rest rdf:nodeID="Ne3b691a437cf425b95ed7b189ecacd81"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N977b4a1de2394ac7a1d6f70024a088a0">
+    <rdf:first rdf:nodeID="N9b527fdfcf4a46b48d0e9f0b51772164"/>
+    <rdf:rest rdf:nodeID="N98aede8a68b849d3a1605947509f7019"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncfff6e325a514ed98d06907702f153b8">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdf:rest rdf:nodeID="Nec4ccffedb404c5994d6fb5c37c161d8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nefe1defdecc54a2e950d3b5d682f1b88">
+    <rdf:first rdf:nodeID="N6f11c8220c9346dbac39ea3f03e26c1c"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N99d21b1f9bbe455d9bf83bc36ac814a0">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen"/>
+    <rdf:rest rdf:nodeID="N4cfe813279b340fc8f4373e6529cada6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#consistOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">to indicate the food items present at the restaurant</rdfs:comment>
+    <rdfs:label xml:lang="en">consistsOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N79c92f95d1b949b69e56e068b0655733">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Italy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PrimeCustomer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N6bbdfcf7fa60484e9561395fe0059c1b"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdfs:comment>Customer having atleast one subscription.</rdfs:comment>
+    <rdfs:label>PrimeCustomer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N40895651bc6341b186be75aa385d02b5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100035">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Coke"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ice_Cream"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gobi_Manchurian"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 30 March 2022 | Amount = 149 | Items = I121 I118 I107</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neecd9bd1206744ae8a86b7e046f179d4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PartyHall"/>
+    <rdf:rest rdf:nodeID="N9405a9f5a5504cc0aed3f5d7721907ee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#AvailableTable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N56498445c3fc4f0eb00f2b1636b659f0"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdfs:comment>Table which is available for reservation.</rdfs:comment>
+    <rdfs:label>AvailableTable</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51711e370dc94b6d86c7702dd14f0681">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N6cea7e23bd6a4e1db4cea4054cbb3486"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b680a20790944609ab107bdc72629e5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdf:rest rdf:nodeID="N9894c3e1db674ba48a5a11954bf8107d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8423a8cf082247e2a3eeed805b2bf36a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurateur"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Expenditure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>It is primitive concept representing cost of maintaining and running restaurant.</rdfs:comment>
+    <rdfs:label>Expenditure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ice_Cream">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3dad8d9798914cc2b9b3f0f73db15141">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N3e338022f5d349fe8450eeaa070e6403"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nadb770c01c124028b363a6c7b1ea89b9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#pays"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100018">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Milk"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Butter_Paneer_Masala"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 23 March 2022 | Amount = 150 | Items = I113 I124</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#takes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdfs:label xml:lang="en">takes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N813be0052b2a47a99d12506f3e8609f4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf24a1293bc45442e9814e53d00eb9135">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+    <rdf:rest rdf:nodeID="N8eb31d391ce9484faa02033b005c553c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Strawberry_Shake">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Mexico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Mexico</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nea63bf7c18a347adba75742448520193">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#generates"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N58e504d281174665a4b52ee1ce6fda24">
+    <rdf:first rdf:nodeID="N403c740480744ef18c46bc9298768b33"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#owns">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurateur"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+    <rdfs:label xml:lang="en">owns</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndbc4dec313ee4e97ade8bb28289c8f06">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N75f527eeeb3343ddb81bc735515111a4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N88f91d8366d0429aa9cb4e32c9fbb76b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#supplies"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8a27b530d576440c8f9f02f1b63c8835">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N0fada8bfd8b840a4a79a5498605bf535"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb835fd15fe9a431391ced5f833185268">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Naa15f75748db45fab70d36a7f6355637"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#supplies">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supplier"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ed8b0cc73dd4f83875c6301cf6e20ec">
+    <rdf:first rdf:nodeID="Ncb26157646aa49b881e900999966e4d5"/>
+    <rdf:rest rdf:nodeID="Nea5dae3dab564e2eb5721df7929a3db7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9dd5910e396f4b269421e84eb6f6b4b8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nd1ed38f82533413ca2fe090944780415"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N12a8ff1b00c14c61a20fc4863b977e1d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#places"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2f53c73db7549a187d7c14ce8caed2a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100032">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gulab_Jamun"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Veg_Lollipop"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Thumps_Up"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 27 March 2022 | Amount = 180 | Items = I120 I117 I104</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ChineseDish">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Ned7181fbcedc4f1e8ee64235420ea433"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdfs:comment>Dish which is originated from China.</rdfs:comment>
+    <rdfs:label>ChineseDish</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100033">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Coke"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ice_Cream"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Potato"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 28 March 2022 | Amount = 210 | Items = I121 I118 I105</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neb7c3f8d047d4ca9af0586852523daa8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N41af24a61ea44bb5894caf1b4b290138"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chicken_Manchurian">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc6190459573d457f96d1dcee2d3c1cd0">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+    <rdf:rest rdf:nodeID="N58e504d281174665a4b52ee1ce6fda24"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8126097fa748459ea1ac18eb92538979">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#serves"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N972f23724ed34c6293636cece72387ce">
+    <rdf:first rdf:nodeID="N2bc4140c776d4ca984ab1d6fc9973910"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nea3a0a92ed0a4ce892c2862faf304075">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdf:rest rdf:nodeID="Na9af6cf0b1fd492db173cfced3c73c0f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N62c07f38069448cda0f95693ce31cdd8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf"/>
+    <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9610ab628c2a4f40ae51840d9baa7e09">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#address">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">to store the address of the restaurant</rdfs:comment>
+    <rdfs:label xml:lang="en">address</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5ecf5b4495304a89b11264b9aea652cd">
+    <rdf:first rdf:nodeID="Ncd78c03325754ef69b0abda8c3c35cda"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8eb31d391ce9484faa02033b005c553c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:rest rdf:nodeID="N5f0491cef05345b8b2249c7b9b71e393"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5740d153879d4e178216991c36c7915d">
+    <rdf:first rdf:nodeID="N5695ed6afb2245e481e395837f4663fd"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#tea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N42ee726a9b6a43a18d792ffc02d1a7d8">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6f11c8220c9346dbac39ea3f03e26c1c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N3298ccbb6eb3448a893d92a4bee380c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N2da62feec9704f6ba3705c9e18954fc4"/>
+    <rdfs:comment>It contains different types of food.</rdfs:comment>
+    <rdfs:label>Dish</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3dab3ba3a80f47b792a38644f15ce3cf">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdf:rest rdf:nodeID="Ne7d0e2ccb1f14e8bbab42c1ed5482190"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nea5dae3dab564e2eb5721df7929a3db7">
+    <rdf:first rdf:nodeID="N5e0050412d7f4fda8dcf2b1846c4fc55"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd3099ac618b4faeb1bad70d89a49ab0">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dessert"/>
+    <rdf:rest rdf:nodeID="N3343e7e59181413c857acd74b94731ee"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0abf3a074bb4ce98fc993f86573bb99">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:rest rdf:nodeID="Na215b51e5cb24b51b9239d36c9621724"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Paneer_65">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N061a76b8ad2341b084daaac52cd97a6e">
+    <rdf:first rdf:nodeID="Nadb770c01c124028b363a6c7b1ea89b9"/>
+    <rdf:rest rdf:nodeID="N7f268dfef6ce4c3887b2256ff00eb27e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#reportsTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="Nf79a100c08164208bf08b7ebe4a24174"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8331b1ae89984208b04fb83351d38a0f">
+    <rdf:first rdf:nodeID="N66703230d7194ad3970528d97ae1d952"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0eab071ea0c34822973d7ed98138749d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:rest rdf:nodeID="Nfeb42ca369a44d93a67878047fc432f9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#details">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47e3a1ecb6dc413ab20fd30654fe3bb4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8a7da16d13a2403799e5a7dbbbf336da">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nae41129f8c874713a0e9a1b17a2d457c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Resto1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+    <RestaurantOnto:name>The Chennai Restaurant</RestaurantOnto:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ea51292d4ce4b6baff96e208d81ce86">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N7aedd2ef0b7c464e9f8d4fd409cbbf67"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Veg_Lollipop">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#paysTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7f268dfef6ce4c3887b2256ff00eb27e">
+    <rdf:first rdf:nodeID="N6cb7a585c3c749df853ff8350505ade6"/>
+    <rdf:rest rdf:nodeID="N70addc9777724006b05d199304c2493f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdfs:comment xml:lang="en">It is a primitive concept representing the person.</rdfs:comment>
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#menuCard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#samosa"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#tea"/>
+    <RestaurantOnto:plannedBy rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#chef1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="Na7d022a86d474204b2eab31336d6bf81"/>
+    <rdfs:range rdf:nodeID="Nd3a17a6710f24cd9bc6a661d564776b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd4ad9f9ceeb4b2ebacc5ef0ed6535b6">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+    <rdf:rest rdf:nodeID="N69cd40efa83a4b249ba511bbfd316785"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Rakul">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100001"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100030"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100032"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S011</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rakul</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cashier1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Cashier"/>
+    <RestaurantOnto:collectsPaymentFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C1"/>
+    <RestaurantOnto:generates rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bill1"/>
+    <RestaurantOnto:uses rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#billingCounter1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfab1d0dcafaf48c78bf12c2e3c45f04d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdf:rest rdf:nodeID="N54bf679d4e304904b974b7141f1877c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5b3f2b3181454da787bff1a81cf40f30">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdf:rest rdf:nodeID="N60845c56ee5e481180854bf514232b99"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd43a57c2d832423db89a810a990c55b8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#takes"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5aae6bd959f2422abf3cc10b7b0d987a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N63d4a1dbaac7426ea87158da0aeb2017"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36d9ed2761894deeb3f664119ef340f8">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdf:rest rdf:nodeID="N8e9b3bda08e54e149caf8d7db3d49005"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ec9e0eebea34f699789ce57e4767bb6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N3197894e507b41159da9c884b82080c1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#books">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdfs:range rdf:nodeID="N8a71fcbdfc364fb6a581f14c86583f22"/>
+    <rdfs:label xml:lang="en">books</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne84f08afc9c64c4cb455023061eb5763">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#managesActively"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5695ed6afb2245e481e395837f4663fd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#assists"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne89296e88e23447d8db170d62f63914b">
+    <rdf:first rdf:nodeID="N301a8e6908374774b60368706bc619fa"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#B1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Bill"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Valet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N9dd5910e396f4b269421e84eb6f6b4b8"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdfs:comment xml:lang="en">Staff who assists customers.</rdfs:comment>
+    <rdfs:label xml:lang="en">Valet</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N44fd920b098f47ad9bd4366417120760">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#contains"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">10</owl:minQualifiedCardinality>
+    <owl:onClass rdf:nodeID="N3ff09e03028f48dd97c6f22ac7fc4de7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nee16457ac72b4337901ac921c414b665">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N35555669da9e4da5b5fa96790e26a3b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kumar_Dev">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100021"/>
+    <RestaurantOnto:takes rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100022"/>
+    <RestaurantOnto:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S027</RestaurantOnto:id>
+    <RestaurantOnto:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kumar Dev</RestaurantOnto:name>
+    <RestaurantOnto:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18000</RestaurantOnto:salary>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1d74148b3c0c4808bdb104a23bcd5c8c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd3a17a6710f24cd9bc6a661d564776b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N1595f5f3678c464ab415014981e826bc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100020">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hydrabadi_Biryani"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 23 March 2022 | Amount = 140 | Items = I108</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N197b2dbb02504011aacb8d7fe9cc6b4a">
+    <rdf:first rdf:nodeID="N98867663118f4049ba715ea40ab1dbfe"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2bc4140c776d4ca984ab1d6fc9973910">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cooks"/>
+    <owl:allValuesFrom rdf:nodeID="N57d8408edf8a47c2930d29802ab10acf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0160769ca294486b785a21c4bae3951">
+    <rdf:first rdf:nodeID="N6604c11df49f44f0a7e0966bcd6af1b9"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N83c96a83268a491796cb7f7e24161a88">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdf:rest rdf:nodeID="N40895651bc6341b186be75aa385d02b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Gulab_Jamun">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#cost">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="Ndbbdcb6df8dd4c858474d443adb17804"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na9dfd08679cf4ed0a3f92223afb67a3a">
+    <rdf:first rdf:nodeID="N655b15b61fa84b8fa4a3cf3378628e80"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N43289026e5364cbfb989d0ee433cb8ba">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N73ce50200fac4c6486cf3e67644eea0c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N301a8e6908374774b60368706bc619fa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#kitchen1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kitchen"/>
+    <RestaurantOnto:usedBy rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#chef1"/>
+    <RestaurantOnto:id>k1</RestaurantOnto:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N63d4a1dbaac7426ea87158da0aeb2017">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdf:rest rdf:nodeID="N061a76b8ad2341b084daaac52cd97a6e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c52492fa0da4fd99f1d61648a4dcd10">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+    <rdf:rest rdf:nodeID="N42ee726a9b6a43a18d792ffc02d1a7d8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Starter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N963fab4490844c94a10f0c4edca34347"/>
+    <rdfs:comment>It is a Dish which is served before MainCourse and is part of MenuCard.</rdfs:comment>
+    <rdfs:label>Starter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na9af6cf0b1fd492db173cfced3c73c0f">
+    <rdf:first rdf:nodeID="Ne84f08afc9c64c4cb455023061eb5763"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kadhai_Paneer">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf20b8080c86343a0a544a42d0908ee93">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N1e802d6cad03431c80b33fccba25a0e4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b5feddd03a744a9861f8a2efd05cc26">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdf:rest rdf:nodeID="Ne62243ed44124a1bb711998cbc9cfd29"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#uses"/>
+    <rdfs:domain rdf:nodeID="N51711e370dc94b6d86c7702dd14f0681"/>
+    <rdfs:range rdf:nodeID="N34c2e375be94474fba051d84692a1152"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N98aede8a68b849d3a1605947509f7019">
+    <rdf:first rdf:nodeID="Ne4c9f46e0796404e92f59be11c10af10"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N14f41f64780947adb47be1159f4fef57">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N57661f8e9e5e4dcd8e7b6731fe29c6d9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb86056a9cb71499b9d6f348a6e221692">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N06b9173621874e828102d833bc76bf0e">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:rest rdf:nodeID="N6f50360a265248d197cd8a4444e878b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7aa61cc9855242c18dc64c051204f8f8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#preparedFor"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ReservedTable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Nb0b8916d2e8c4a51bf09a571921fc3f5"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Table"/>
+    <rdfs:comment>Table which is reserved by a customer.</rdfs:comment>
+    <rdfs:label>ReservedTable</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf6ff431ea8604c4ebf48760057484121">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4c61e00ea9ba4d36b895dde082239e4a">
+    <rdf:first rdf:nodeID="N73b9af8cfd9e4f3b927801db8d15cd44"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#samosa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#StorageArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Ndbc4dec313ee4e97ade8bb28289c8f06"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+    <rdfs:comment>Area used by staff and contains raw materials.</rdfs:comment>
+    <rdfs:label>StorageArea</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#NonVegFood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#VegFood"/>
+    <rdfs:comment>It is a food containing meat and animal tissues.</rdfs:comment>
+    <rdfs:label>NonVegFood</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N941232fd6d3d4c3bba091654b625cd16">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#serves"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N435297727c724bcab5655117de03d24e"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdfs:comment xml:lang="en">Person who works at the restaurant</rdfs:comment>
+    <rdfs:label xml:lang="en">Staff</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e147ca67feb4fb989baad95652b9a95">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bookedBy"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96d7a0d65fdb495f961263cb14aa8a0b">
+    <rdf:first rdf:nodeID="Nea63bf7c18a347adba75742448520193"/>
+    <rdf:rest rdf:nodeID="N454e960e299340cf9b6baf8b0f13c183"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#surfaceArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Butter_Paneer_Masala">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e58a430d4834a2f9344e32ba5ed6542">
+    <rdf:first rdf:nodeID="Nd2f53c73db7549a187d7c14ce8caed2a"/>
+    <rdf:rest rdf:nodeID="N0792baedb3c240afa336a284e3832e87"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd49b1ff6486e4adfb8d636dea830e280">
+    <rdf:first rdf:nodeID="Ne5894c573ec14e89ab19fa21853c2d60"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N192fc2c0e6e44d8bbdf6eb9690e44de6">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:rest rdf:nodeID="Nb86056a9cb71499b9d6f348a6e221692"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6d655df4ccbd495690b560b921ca759a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RestRoom"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N65ca36d5755c47d78ce90be07bfdd4b8">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="Nb24c6bbb21ee41febf1570b704524f8f"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nedf54e81ea44406fb6b4ebf355367e47">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#ChineseDish"/>
+    <rdf:rest rdf:nodeID="N61e0ddd89c47437d99754919a719cdc8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100021">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kashmiri_Pulav"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Ice_Cream"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 24 March 2022 | Amount = 160 | Items = I115 I118</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N73ce50200fac4c6486cf3e67644eea0c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+    <rdf:rest rdf:nodeID="N8423a8cf082247e2a3eeed805b2bf36a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Coke">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncd78c03325754ef69b0abda8c3c35cda">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#bookedBy"/>
+    <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Italy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Italy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chocolate_Shake">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7aedd2ef0b7c464e9f8d4fd409cbbf67">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Amount"/>
+    <rdf:rest rdf:nodeID="N06b9173621874e828102d833bc76bf0e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kashmiri_Pulav">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N73b9af8cfd9e4f3b927801db8d15cd44">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#worksAt"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f0491cef05345b8b2249c7b9b71e393">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#StorageArea"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N56498445c3fc4f0eb00f2b1636b659f0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N05669d837c7044c29fcf4e012e938e36"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ae86c4eba76436cb48d60ffcf34fe9d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#partOf"/>
+    <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Supervisor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Nbdffb920d623464fbf3203b2ed6eb67a"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdfs:comment xml:lang="en">Staff who actively manages the restaurant staff.</rdfs:comment>
+    <rdfs:label xml:lang="en">Supervisor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N01c4a3aa9fb143cab2ed5d94305b20a5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:rest rdf:nodeID="Nc745dfced2b64195a2cad8d1c86a1772"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#originatedFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="Nf8b5b80585714072ad837c0e60e82d47"/>
+    <rdfs:range rdf:nodeID="N9d8b8e30c5604ac5a3d1527d04bf39fb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfeb42ca369a44d93a67878047fc432f9">
+    <rdf:first rdf:nodeID="N44fd920b098f47ad9bd4366417120760"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#uses">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N2eb0473f677346d799a48a5049e1bb4f"/>
+    <rdfs:range rdf:nodeID="N0b987bcae2184ba2a156f16c29848ffc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#C4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6bbdfcf7fa60484e9561395fe0059c1b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N3dab3ba3a80f47b792a38644f15ce3cf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N90330e912d84408f8ff743bd0f56d8eb"/>
+    <rdfs:comment xml:lang="en">It contains food or beverages.</rdfs:comment>
+    <rdfs:label xml:lang="en">Order</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b4bdb905fc842aebaa598964b723ef2">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Area"/>
+    <rdf:rest rdf:nodeID="Na0ecdb8702a94056bb608f57ce1dd989"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#D100001">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Veg_Manchurian"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Kashmiri_Biryani"/>
+    <RestaurantOnto:contains rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Thumps_Up"/>
+    <RestaurantOnto:orderDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date = 20 March 2022 | Amount = 252 | Items = I103 I120 I111</RestaurantOnto:orderDetails>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Hydrabadi_Biryani">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57661f8e9e5e4dcd8e7b6731fe29c6d9">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#PartyHall"/>
+    <rdf:rest rdf:nodeID="N1d74148b3c0c4808bdb104a23bcd5c8c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N86068df01af042aa9779d8d27f5f6d43">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nc6190459573d457f96d1dcee2d3c1cd0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b98f766436045feba6a4ddddbc91c74">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#visits"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf978c8ccf16449c18343c46ca310972e">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Mexico"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na2ba3f68c75144f8876a90cbf8e4aec1">
+    <rdf:first rdf:nodeID="N0c3917eefc78493a82e6a053814b65f2"/>
+    <rdf:rest rdf:nodeID="N972f23724ed34c6293636cece72387ce"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N603f0f15ac9e4c29a4e448cc59450e61">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#China"/>
+    <rdf:rest rdf:nodeID="N85d1643ed290425fa3e3e22eb86dd7dc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1e802d6cad03431c80b33fccba25a0e4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdf:rest rdf:nodeID="Nad57f04226964482896ddc15c0372e6f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34c2e375be94474fba051d84692a1152">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nb1a86f00de9d4f5a82064a72518b8524"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na874b3accadf463da0da692ce118cf9a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RawMaterial"/>
+    <rdf:rest rdf:nodeID="N0ec75f99cd72420abf86128cea64528a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3298ccbb6eb3448a893d92a4bee380c2">
+    <rdf:first rdf:nodeID="N941232fd6d3d4c3bba091654b625cd16"/>
+    <rdf:rest rdf:nodeID="N033b02b70be648b1a2bc95f19ba95907"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e0050412d7f4fda8dcf2b1846c4fc55">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#usedBy"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#billingCounter1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <RestaurantOnto:id>billC1</RestaurantOnto:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3197894e507b41159da9c884b82080c1">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdf:rest rdf:nodeID="N40f20a0bb9d640edaa6840a938078ebb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N40f20a0bb9d640edaa6840a938078ebb">
+    <rdf:first rdf:nodeID="Nac57b1d6cdb24c7090396fa1048732dd"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N41af24a61ea44bb5894caf1b4b290138">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Waiter"/>
+    <rdf:rest rdf:nodeID="N2f9c1434a11f4d73a73fa80521af815d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndc1190296c384819bc3fa3c74d43a5b3">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Dish"/>
+    <rdf:rest rdf:nodeID="Nf24a1293bc45442e9814e53d00eb9135"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na215b51e5cb24b51b9239d36c9621724">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Subscription"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6256642ba8b14dc5bdf3c185a4a73b82">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Person"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne03d8e68742a430d8223f0c2f811f99b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N67dd777b57494f77804309286e01cdd1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0b987bcae2184ba2a156f16c29848ffc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N148c2404481c44f0a9c9343f2ddb756f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plannedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#plans"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#MenuCard"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ea5df7c453249e9a33288bfb52caafc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nec797b06e11542ceaaa4d3ce14609062"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na6b571d03b6c41868c25d50cdd623633">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+    <rdf:rest rdf:nodeID="N6256642ba8b14dc5bdf3c185a4a73b82"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nde26fbbe66b64160827b75309c10b678">
+    <rdf:first rdf:nodeID="Neef173b43c6442eca92a02dd90940a0e"/>
+    <rdf:rest rdf:nodeID="Na2ba3f68c75144f8876a90cbf8e4aec1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9052124f68ae49a58090c72dc663bfe5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Staff"/>
+    <rdf:rest rdf:nodeID="Nefe1defdecc54a2e950d3b5d682f1b88"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na4889553583f4b80af41a848d99796db">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chef"/>
+    <rdf:rest rdf:nodeID="N3149bb637ba641b8bd351c3bb1ebf2c6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N963fab4490844c94a10f0c4edca34347">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N6be9724bb58940e29600352a3fad064a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4cfe813279b340fc8f4373e6529cada6">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#RestRoom"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#China">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>China</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Chilli_Paneer">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N078e9ef572124c99a691f0ce04b4f64f">
+    <rdf:first rdf:nodeID="N813be0052b2a47a99d12506f3e8609f4"/>
+    <rdf:rest rdf:nodeID="Na9dfd08679cf4ed0a3f92223afb67a3a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90330e912d84408f8ff743bd0f56d8eb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N444de7e0d7154b589c0bf2593a3c0356"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne0b15e099c4542789f2509b8201f5935">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Beverage"/>
+    <rdf:rest rdf:nodeID="Nf6ff431ea8604c4ebf48760057484121"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#mgr">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/ajay/ontologies/2022/3/RestaurantOnto#Manager"/>
+  </rdf:Description>
+</rdf:RDF>
